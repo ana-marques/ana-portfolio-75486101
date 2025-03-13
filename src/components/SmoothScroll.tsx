@@ -19,17 +19,15 @@ const SmoothScroll: React.FC<SmoothScrollProps> = ({ children }) => {
         if (targetId && targetId !== '#') {
           const targetElement = document.querySelector(targetId);
           
-          // Close any open mobile menu (look for mobile menu elements)
-          const mobileMenus = document.querySelectorAll('[data-state="open"]');
-          mobileMenus.forEach(menu => {
-            if (menu.classList.contains('md:hidden') || menu.closest('.md\\:hidden')) {
-              // Find any open mobile menu and trigger its close button if available
-              const closeButtons = document.querySelectorAll('button[aria-label="Close menu"]');
-              if (closeButtons.length) {
-                (closeButtons[0] as HTMLButtonElement).click();
-              }
+          // Close any open mobile menu
+          const mobileMenu = document.querySelector('[data-state="open"]');
+          if (mobileMenu) {
+            // Find and click the close button
+            const closeButton = document.querySelector('button[aria-label="Close menu"]') as HTMLButtonElement;
+            if (closeButton) {
+              closeButton.click();
             }
-          });
+          }
           
           if (targetElement) {
             window.scrollTo({

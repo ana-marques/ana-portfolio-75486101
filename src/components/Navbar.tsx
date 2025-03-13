@@ -2,15 +2,18 @@
 import React, { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 const Navbar: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const isMobile = useIsMobile();
 
+  // Handle scroll events
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);
-      // Close mobile menu when scrolling
+      // Always close mobile menu when scrolling
       if (mobileMenuOpen) {
         setMobileMenuOpen(false);
       }
@@ -19,6 +22,13 @@ const Navbar: React.FC = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, [mobileMenuOpen]);
+
+  // Close mobile menu if screen size changes from mobile to desktop
+  useEffect(() => {
+    if (!isMobile && mobileMenuOpen) {
+      setMobileMenuOpen(false);
+    }
+  }, [isMobile, mobileMenuOpen]);
 
   return (
     <header
@@ -67,25 +77,28 @@ const Navbar: React.FC = () => {
       </div>
 
       {/* Mobile Menu */}
-      <div
-        className={cn(
-          "fixed inset-0 bg-background pt-24 px-8 z-40 flex flex-col transition-transform duration-300 ease-in-out transform md:hidden",
-          mobileMenuOpen ? "translate-y-0" : "-translate-y-full"
-        )}
-      >
-        <nav className="flex flex-col space-y-6 items-start">
-          {["work", "about", "process", "contact"].map((item) => (
-            <a
-              key={item}
-              href={`#${item}`}
-              className="text-2xl font-medium tracking-tight hover:text-primary/80 transition-colors"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              {item.charAt(0).toUpperCase() + item.slice(1)}
-            </a>
-          ))}
-        </nav>
-      </div>
+      {isMobile && (
+        <div
+          className={cn(
+            "fixed inset-0 bg-background pt-24 px-8 z-40 flex flex-col md:hidden transition-transform duration-300 ease-in-out transform",
+            mobileMenuOpen ? "translate-y-0" : "-translate-y-full"
+          )}
+          data-state={mobileMenuOpen ? "open" : "closed"}
+        >
+          <nav className="flex flex-col space-y-6 items-start">
+            {["work", "about", "process", "contact"].map((item) => (
+              <a
+                key={item}
+                href={`#${item}`}
+                className="text-2xl font-medium tracking-tight hover:text-primary/80 transition-colors"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                {item.charAt(0).toUpperCase() + item.slice(1)}
+              </a>
+            ))}
+          </nav>
+        </div>
+      )}
     </header>
   );
 };
