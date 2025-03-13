@@ -83,6 +83,7 @@ const Navbar: React.FC = () => {
             "fixed inset-0 bg-background pt-24 px-8 z-40 flex flex-col md:hidden transition-transform duration-300 ease-in-out transform",
             mobileMenuOpen ? "translate-y-0" : "-translate-y-full"
           )}
+          style={{ visibility: mobileMenuOpen ? "visible" : "hidden" }}
           data-state={mobileMenuOpen ? "open" : "closed"}
         >
           <nav className="flex flex-col space-y-6 items-start">
