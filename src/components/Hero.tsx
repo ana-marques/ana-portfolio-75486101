@@ -101,7 +101,7 @@ const Hero: React.FC = () => {
         </div>
       </div>
 
-      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex flex-col items-center opacity-0 animate-fade-in" style={{ animationDelay: "1.2s" }}>
+      <div className="absolute bottom-10 left-0 right-0 w-full flex flex-col items-center opacity-0 animate-fade-in" style={{ animationDelay: "1.2s" }}>
         <span className="text-sm text-muted-foreground mb-2">Scroll to explore</span>
         <ArrowDown size={16} className="text-muted-foreground animate-bounce" />
       </div>
