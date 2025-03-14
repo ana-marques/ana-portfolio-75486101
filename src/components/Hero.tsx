@@ -68,15 +68,6 @@ const Hero: React.FC = () => {
             <br />
             <span className="relative">
               experiences with
-              <svg
-                className="absolute -bottom-2 left-0 w-full h-3 text-blue-50"
-                preserveAspectRatio="none"
-                viewBox="0 0 300 10"
-                fill="currentColor"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M0 5C50 2 100 0 150 5C200 8 250 10 300 5V10H0V5Z" />
-              </svg>
             </span>
             <br />
             <AnimatedText
@@ -125,7 +116,7 @@ const Hero: React.FC = () => {
       <div 
         className={cn(
           "absolute bottom-10 left-0 right-0 w-full flex flex-col items-center opacity-0 animate-fade-in",
-          isMobile && "bottom-28"
+          isMobile && "bottom-40"
         )} 
         style={{ animationDelay: "1.2s" }}
       >
