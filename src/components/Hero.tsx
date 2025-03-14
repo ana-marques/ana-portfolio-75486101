@@ -4,9 +4,11 @@ import { cn } from "@/lib/utils";
 import AnimatedText from "./AnimatedText";
 import { ArrowDown, Waves } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 const Hero: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const isMobile = useIsMobile();
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -34,7 +36,7 @@ const Hero: React.FC = () => {
             style={{ animationDelay: "0.1s" }}
           >
             <Avatar className="h-24 w-24 border-2 border-white shadow-md">
-              <AvatarImage src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?auto=format&fit=crop&w=200&h=200" alt="Ana Marques" />
+              <AvatarImage src="/lovable-uploads/f7046e72-83dd-4bd9-be62-846314218f9b.png" alt="Ana Marques" />
               <AvatarFallback>AM</AvatarFallback>
             </Avatar>
           </div>
@@ -120,7 +122,13 @@ const Hero: React.FC = () => {
         </div>
       </div>
 
-      <div className="absolute bottom-10 left-0 right-0 w-full flex flex-col items-center opacity-0 animate-fade-in" style={{ animationDelay: "1.2s" }}>
+      <div 
+        className={cn(
+          "absolute bottom-10 left-0 right-0 w-full flex flex-col items-center opacity-0 animate-fade-in",
+          isMobile && "bottom-28"
+        )} 
+        style={{ animationDelay: "1.2s" }}
+      >
         <span className="text-sm text-muted-foreground mb-2">Scroll to explore</span>
         <ArrowDown size={16} className="text-muted-foreground animate-bounce" />
       </div>
