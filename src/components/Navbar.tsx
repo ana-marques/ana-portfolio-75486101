@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
+import { Button } from "./ui/button";
 
 const Navbar: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -29,6 +30,10 @@ const Navbar: React.FC = () => {
       setMobileMenuOpen(false);
     }
   }, [isMobile, mobileMenuOpen]);
+
+  const handleCloseMenu = () => {
+    setMobileMenuOpen(false);
+  };
 
   return (
     <header
@@ -86,13 +91,24 @@ const Navbar: React.FC = () => {
           style={{ visibility: mobileMenuOpen ? "visible" : "hidden" }}
           data-state={mobileMenuOpen ? "open" : "closed"}
         >
+          {/* Close button in top right */}
+          <Button
+            variant="ghost"
+            size="icon"
+            className="absolute top-6 right-6"
+            onClick={handleCloseMenu}
+            aria-label="Close menu"
+          >
+            <X size={24} />
+          </Button>
+          
           <nav className="flex flex-col space-y-6 items-start">
             {["work", "about", "process", "contact"].map((item) => (
               <a
                 key={item}
                 href={`#${item}`}
                 className="text-2xl font-medium tracking-tight hover:text-primary/80 transition-colors"
-                onClick={() => setMobileMenuOpen(false)}
+                onClick={handleCloseMenu}
               >
                 {item.charAt(0).toUpperCase() + item.slice(1)}
               </a>
