@@ -24,7 +24,7 @@ const Hero: React.FC = () => {
       </div>
 
       <div className="container px-6 lg:px-8 mx-auto">
-        <div className="max-w-4xl mx-auto text-center fade-in-up-stagger">
+        <div className="max-w-4xl mx-auto text-center">
           {/* Profile Photo */}
           <div
             className={cn(
@@ -88,7 +88,7 @@ const Hero: React.FC = () => {
 
           <p
             className={cn(
-              "text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-10 text-balance opacity-0",
+              "text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-10 opacity-0",
               isVisible && "animate-fade-in"
             )}
             style={{ animationDelay: "0.6s" }}

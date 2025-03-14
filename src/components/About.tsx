@@ -133,7 +133,7 @@ const About: React.FC = () => {
                   style={{ animationDelay: `${0.4 + index * 0.1}s` }}
                 >
                   <div className="flex items-start space-x-4">
-                    <div className="h-10 w-10 flex items-center justify-center bg-secondary rounded-md text-foreground">
+                    <div className="h-10 w-10 min-w-10 flex items-center justify-center bg-secondary rounded-md text-foreground mx-2">
                       {skill.icon}
                     </div>
                     <div>
