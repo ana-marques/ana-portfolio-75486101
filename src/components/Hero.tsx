@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
 import AnimatedText from "./AnimatedText";
-import { ArrowDown, Wave } from "lucide-react";
+import { ArrowDown, Waves } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 const Hero: React.FC = () => {
@@ -48,7 +48,7 @@ const Hero: React.FC = () => {
             style={{ animationDelay: "0.2s" }}
           >
             <h2 className="text-lg md:text-xl font-medium mb-2 flex items-center justify-center gap-2">
-              Hi, I'm Ana Marques <Wave size={18} className="inline text-amber-500 animate-[wave_2s_ease-in-out_infinite]" />
+              Hi, I'm Ana Marques <Waves size={18} className="inline text-amber-500 animate-[wave_2s_ease-in-out_infinite]" />
             </h2>
             <span className="inline-block px-3 py-1 text-xs font-medium tracking-wider text-foreground/80 uppercase bg-muted rounded-full">
               Senior Product Designer
