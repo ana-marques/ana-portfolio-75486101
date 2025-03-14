@@ -2,7 +2,8 @@
 import React, { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
 import AnimatedText from "./AnimatedText";
-import { ArrowDown } from "lucide-react";
+import { ArrowDown, Wave } from "lucide-react";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 const Hero: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -24,6 +25,21 @@ const Hero: React.FC = () => {
 
       <div className="container px-6 lg:px-8 mx-auto">
         <div className="max-w-4xl mx-auto text-center fade-in-up-stagger">
+          {/* Profile Photo */}
+          <div
+            className={cn(
+              "mb-8 opacity-0 flex justify-center",
+              isVisible && "animate-fade-in"
+            )}
+            style={{ animationDelay: "0.1s" }}
+          >
+            <Avatar className="h-24 w-24 border-2 border-white shadow-md">
+              <AvatarImage src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?auto=format&fit=crop&w=200&h=200" alt="Ana Marques" />
+              <AvatarFallback>AM</AvatarFallback>
+            </Avatar>
+          </div>
+          
+          {/* Greeting */}
           <div
             className={cn(
               "mb-6 opacity-0",
@@ -31,6 +47,9 @@ const Hero: React.FC = () => {
             )}
             style={{ animationDelay: "0.2s" }}
           >
+            <h2 className="text-lg md:text-xl font-medium mb-2 flex items-center justify-center gap-2">
+              Hi, I'm Ana Marques <Wave size={18} className="inline text-amber-500 animate-[wave_2s_ease-in-out_infinite]" />
+            </h2>
             <span className="inline-block px-3 py-1 text-xs font-medium tracking-wider text-foreground/80 uppercase bg-muted rounded-full">
               Senior Product Designer
             </span>

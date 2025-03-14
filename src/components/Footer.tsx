@@ -14,12 +14,12 @@ const Footer: React.FC = () => {
               className="text-base font-medium tracking-tight"
               aria-label="Home"
             >
-              john.designer
+              ana.designer
             </a>
           </div>
 
           <div className="text-sm text-muted-foreground">
-            &copy; {currentYear} John Designer. All rights reserved.
+            &copy; {currentYear} Ana Marques. All rights reserved.
           </div>
 
           <div className="mt-4 md:mt-0">

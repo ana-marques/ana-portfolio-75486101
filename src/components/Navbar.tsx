@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
-import { Menu, X } from "lucide-react";
+import { Menu, X, FileText } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { Button } from "./ui/button";
 
@@ -50,7 +50,7 @@ const Navbar: React.FC = () => {
           className="text-lg font-medium tracking-tight transition-opacity hover:opacity-80"
           aria-label="Home"
         >
-          john.designer
+          ana.designer
         </a>
 
         {/* Desktop Navigation */}
@@ -65,6 +65,17 @@ const Navbar: React.FC = () => {
               <span className="absolute -bottom-1 left-0 h-[1px] w-0 bg-foreground transition-all duration-300 group-hover:w-full"></span>
             </a>
           ))}
+          
+          <a
+            href="/resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm tracking-wide text-muted-foreground hover:text-foreground transition-colors relative group flex items-center space-x-1"
+          >
+            <FileText size={16} />
+            <span>Resume</span>
+            <span className="absolute -bottom-1 left-0 h-[1px] w-0 bg-foreground transition-all duration-300 group-hover:w-full"></span>
+          </a>
         </nav>
 
         {/* Mobile Menu Button */}
@@ -85,7 +96,7 @@ const Navbar: React.FC = () => {
       {isMobile && (
         <div
           className={cn(
-            "fixed inset-0 bg-background pt-24 px-8 z-40 flex flex-col md:hidden transition-transform duration-300 ease-in-out transform",
+            "fixed inset-0 bg-white pt-24 px-8 z-40 flex flex-col md:hidden transition-transform duration-300 ease-in-out transform",
             mobileMenuOpen ? "translate-y-0" : "-translate-y-full"
           )}
           style={{ visibility: mobileMenuOpen ? "visible" : "hidden" }}
@@ -113,6 +124,17 @@ const Navbar: React.FC = () => {
                 {item.charAt(0).toUpperCase() + item.slice(1)}
               </a>
             ))}
+            
+            <a
+              href="/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-2xl font-medium tracking-tight hover:text-primary/80 transition-colors flex items-center space-x-2"
+              onClick={handleCloseMenu}
+            >
+              <FileText size={20} />
+              <span>Resume</span>
+            </a>
           </nav>
         </div>
       )}
