@@ -97,13 +97,13 @@ const About: React.FC = () => {
               style={{ animationDelay: "0.2s" }}
             >
               <p>
-                Currently, I'm working as a Senior UX/UI Designer. I completed a UX/UI Design Bootcamp at Ironhack in 2019, following my business background, where I managed and analyzed data in market research.
+                As a Senior UX/UI Designer, I bring a unique blend of business acumen and design expertise to every project. My journey into UX began at Ironhack's Design Bootcamp in 2019, building upon my background in market research where I honed my analytical skills and developed a deep understanding of user behavior.
               </p>
               <p>
-                I aim to work with a dynamic company and help create impactful solutions for its users. My strengths include being a sociable, team-oriented, and organized individual with a versatile skill set and possessing an open-minded, detail-oriented, and problem-solving mindset.
+                I thrive in collaborative environments where I can apply my versatile skillset to create impactful solutions. My colleagues describe me as sociable, meticulously organized, and detail-oriented—qualities that enable me to transform complex problems into elegant user experiences through a thoughtful, systematic approach.
               </p>
               <p>
-                In my free time, I enjoy rock climbing and engaging in DIY projects like knitting, macramé, upcycling, and reading. My technical expertise includes utilizing tools such as Figma, InVision, and Adobe XD, prototyping and having experience with Product Design, Design Thinking, and Design Systems.
+                When I'm not designing, you'll find me scaling rock climbing walls or immersed in creative DIY projects like knitting and macramé. My technical toolkit includes Figma, InVision, and Adobe XD, complemented by expertise in Product Design, Design Thinking methodologies, and building comprehensive Design Systems.
               </p>
             </div>
           </div>

@@ -18,7 +18,7 @@ const Hero: React.FC = () => {
   }, []);
 
   return (
-    <section className="relative min-h-screen pt-24 pb-16 flex flex-col justify-center overflow-hidden">
+    <section className="relative min-h-screen pt-24 pb-24 flex flex-col justify-center overflow-hidden">
       <div className="absolute inset-0 -z-10">
         <div className="absolute inset-0 bg-[#F9FAFB] opacity-60"></div>
         <div className="absolute top-1/3 left-1/4 w-[500px] h-[500px] bg-gradient-to-r from-blue-50 to-indigo-50 rounded-full filter blur-3xl opacity-30"></div>
@@ -92,7 +92,7 @@ const Hero: React.FC = () => {
 
           <div
             className={cn(
-              "flex flex-col sm:flex-row justify-center gap-4 opacity-0",
+              "flex flex-col sm:flex-row justify-center gap-4 opacity-0 mb-16",
               isVisible && "animate-fade-in"
             )}
             style={{ animationDelay: "0.8s" }}
@@ -116,7 +116,7 @@ const Hero: React.FC = () => {
       <div 
         className={cn(
           "absolute bottom-10 left-0 right-0 w-full flex flex-col items-center opacity-0 animate-fade-in",
-          isMobile && "bottom-52"
+          isMobile && "bottom-20"
         )} 
         style={{ animationDelay: "1.2s" }}
       >
