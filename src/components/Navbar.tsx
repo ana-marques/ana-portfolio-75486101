@@ -67,7 +67,7 @@ const Navbar: React.FC = () => {
           ))}
           
           <a
-            href="/resume.pdf"
+            href="https://drive.google.com/file/d/1fcmsuywKbFCzlgIZ8eCm7PieAo2Dh7xD/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="text-sm tracking-wide text-muted-foreground hover:text-foreground transition-colors relative group flex items-center space-x-1"
@@ -126,7 +126,7 @@ const Navbar: React.FC = () => {
             ))}
             
             <a
-              href="/resume.pdf"
+              href="https://drive.google.com/file/d/1fcmsuywKbFCzlgIZ8eCm7PieAo2Dh7xD/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="text-2xl font-medium tracking-tight hover:text-primary/80 transition-colors flex items-center space-x-2"

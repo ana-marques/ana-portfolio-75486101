@@ -103,7 +103,7 @@ const About: React.FC = () => {
                 I thrive in collaborative environments where I can apply my versatile skillset to create impactful solutions. My colleagues describe me as sociable, meticulously organized, and detail-oriented—qualities that enable me to transform complex problems into elegant user experiences through a thoughtful, systematic approach.
               </p>
               <p>
-                When I'm not designing, you'll find me scaling rock climbing walls or immersed in creative DIY projects like knitting and macramé. My technical toolkit includes Figma, InVision, and Adobe XD, complemented by expertise in Product Design, Design Thinking methodologies, and building comprehensive Design Systems.
+                When I'm not designing, you'll find me scaling rock climbing walls or immersed in creative DIY projects like knitting and macramé.
               </p>
             </div>
           </div>
