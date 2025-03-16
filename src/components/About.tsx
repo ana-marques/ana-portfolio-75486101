@@ -97,16 +97,13 @@ const About: React.FC = () => {
               style={{ animationDelay: "0.2s" }}
             >
               <p>
-                With over 8 years of experience in product design, I've had the privilege of working across diverse industries—from fintech and healthcare to e-commerce and SaaS platforms.
+                Currently, I'm working as a Senior UX/UI Designer. I completed a UX/UI Design Bootcamp at Ironhack in 2019, following my business background, where I managed and analyzed data in market research.
               </p>
               <p>
-                My design philosophy is grounded in the belief that exceptional products emerge at the intersection of user needs, business goals, and technological possibilities. I excel at translating complex requirements into intuitive interfaces that delight users while driving business results.
+                I aim to work with a dynamic company and help create impactful solutions for its users. My strengths include being a sociable, team-oriented, and organized individual with a versatile skill set and possessing an open-minded, detail-oriented, and problem-solving mindset.
               </p>
               <p>
-                Beyond my technical skills, I'm passionate about fostering design culture within organizations and mentoring emerging designers. I believe in the power of design as a strategic driver for business growth and meaningful innovation.
-              </p>
-              <p>
-                When I'm not designing, you'll find me exploring photography, attending design conferences, or experimenting with new creative tools to expand my perspective.
+                In my free time, I enjoy rock climbing and engaging in DIY projects like knitting, macramé, upcycling, and reading. My technical expertise includes utilizing tools such as Figma, InVision, and Adobe XD, prototyping and having experience with Product Design, Design Thinking, and Design Systems.
               </p>
             </div>
           </div>

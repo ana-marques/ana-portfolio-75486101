@@ -1,7 +1,7 @@
 
 import React, { useRef, useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
-import { Mail, Linkedin, Twitter, Github } from "lucide-react";
+import { Mail, Linkedin, Github, ExternalLink } from "lucide-react";
 
 const Contact: React.FC = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -65,7 +65,7 @@ const Contact: React.FC = () => {
           style={{ animationDelay: "0.3s" }}
         >
           <a
-            href="mailto:hello@designer.com"
+            href="mailto:anapcm94@gmail.com"
             className="inline-flex items-center justify-center px-8 py-4 rounded-full bg-foreground hover:bg-foreground/90 text-white font-medium transition-all"
           >
             <Mail size={18} className="mr-2" />
@@ -81,25 +81,31 @@ const Contact: React.FC = () => {
           style={{ animationDelay: "0.4s" }}
         >
           <a
-            href="#"
+            href="https://www.linkedin.com/in/anaptcmarques/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-white border border-gray-200 hover:border-gray-300 text-foreground transition-all hover:translate-y-[-2px] hover:shadow-md"
             aria-label="LinkedIn"
           >
             <Linkedin size={18} />
           </a>
           <a
-            href="#"
-            className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-white border border-gray-200 hover:border-gray-300 text-foreground transition-all hover:translate-y-[-2px] hover:shadow-md"
-            aria-label="Twitter"
-          >
-            <Twitter size={18} />
-          </a>
-          <a
-            href="#"
+            href="https://github.com/yourusername"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-white border border-gray-200 hover:border-gray-300 text-foreground transition-all hover:translate-y-[-2px] hover:shadow-md"
             aria-label="Github"
           >
             <Github size={18} />
+          </a>
+          <a
+            href="https://medium.com/@anapcmarques"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-white border border-gray-200 hover:border-gray-300 text-foreground transition-all hover:translate-y-[-2px] hover:shadow-md"
+            aria-label="Medium"
+          >
+            <ExternalLink size={18} />
           </a>
         </div>
       </div>

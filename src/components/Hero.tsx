@@ -116,7 +116,7 @@ const Hero: React.FC = () => {
       <div 
         className={cn(
           "absolute bottom-10 left-0 right-0 w-full flex flex-col items-center opacity-0 animate-fade-in",
-          isMobile && "bottom-40"
+          isMobile && "bottom-52"
         )} 
         style={{ animationDelay: "1.2s" }}
       >
