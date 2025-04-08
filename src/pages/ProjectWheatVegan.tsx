@@ -5,6 +5,10 @@ import { Link } from "react-router-dom";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { Card, CardContent } from "@/components/ui/card";
 import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
+import PersonaSection from "@/components/WheatVegan/PersonaSection";
+import PrototypesSection from "@/components/WheatVegan/PrototypesSection";
+import BrandAssetsSection from "@/components/WheatVegan/BrandAssetsSection";
+import ConceptSection from "@/components/WheatVegan/ConceptSection";
 
 const ProjectWheatVegan: React.FC = () => {
   useEffect(() => {
@@ -55,6 +59,12 @@ const ProjectWheatVegan: React.FC = () => {
         </div>
       </section>
 
+      {/* Concept Section */}
+      <ConceptSection />
+      
+      {/* Persona Section */}
+      <PersonaSection />
+      
       {/* Project Content */}
       <section className="w-full py-16">
         <div className="container mx-auto max-w-4xl px-6 lg:px-8">
@@ -66,6 +76,7 @@ const ProjectWheatVegan: React.FC = () => {
               <TabsTrigger value="outcome">Outcome</TabsTrigger>
             </TabsList>
             
+            {/* Project Overview Tab */}
             <TabsContent value="overview" className="space-y-8">
               <div>
                 <h2 className="text-2xl font-bold mb-4">Project Overview</h2>
@@ -108,6 +119,7 @@ const ProjectWheatVegan: React.FC = () => {
               </div>
             </TabsContent>
             
+            {/* Project Problem Tab */}
             <TabsContent value="problem" className="space-y-8">
               <div>
                 <h2 className="text-2xl font-bold mb-4">The Problem</h2>
@@ -243,6 +255,7 @@ const ProjectWheatVegan: React.FC = () => {
               </div>
             </TabsContent>
             
+            {/* Project Solution Tab */}
             <TabsContent value="solution" className="space-y-8">
               <div>
                 <h2 className="text-2xl font-bold mb-4">The Solution</h2>
@@ -390,6 +403,7 @@ const ProjectWheatVegan: React.FC = () => {
               </div>
             </TabsContent>
             
+            {/* Project Outcome Tab */}
             <TabsContent value="outcome" className="space-y-8">
               <div>
                 <h2 className="text-2xl font-bold mb-4">Project Outcomes</h2>
@@ -454,6 +468,12 @@ const ProjectWheatVegan: React.FC = () => {
         </div>
       </section>
 
+      {/* Prototypes Section */}
+      <PrototypesSection />
+      
+      {/* Brand Assets Section */}
+      <BrandAssetsSection />
+      
       {/* Related Projects */}
       <section className="w-full py-16 bg-slate-50">
         <div className="container mx-auto max-w-6xl px-6 lg:px-8">
