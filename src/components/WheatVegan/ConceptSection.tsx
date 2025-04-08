@@ -12,6 +12,9 @@ const ConceptSection = () => {
             <p className="text-3xl font-medium leading-snug">
               Online platform with vegan boxes, monthly subscriptions and vegan recipes
             </p>
+            <p className="mt-6 text-muted-foreground">
+              100% cruelty free, 100% plant-based. Wheat a Vegan?! boxes are designed to share the best vegan food available.
+            </p>
           </div>
           
           <div className="flex justify-center">
@@ -28,6 +31,12 @@ const ConceptSection = () => {
             <h3 className="text-3xl font-medium text-green-500 mb-3">How Might We</h3>
             <p className="text-5xl font-bold">make vegan food be super tasteful, healthy and available?</p>
             <p className="text-xl text-green-500 mt-6">Problem</p>
+            <p className="mt-4 text-muted-foreground">
+              Despite growing awareness of plant-based benefits, adoption remains low due to taste dissatisfaction, 
+              cultural barriers, and lack of knowledge about preparation. Many try vegan options once, have a negative 
+              experience, and never return. Our platform aims to solve these challenges through curated subscriptions, 
+              culturally-sensitive recipes, and community support.
+            </p>
           </div>
         </div>
       </div>

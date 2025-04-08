@@ -9,6 +9,7 @@ import PersonaSection from "@/components/WheatVegan/PersonaSection";
 import PrototypesSection from "@/components/WheatVegan/PrototypesSection";
 import BrandAssetsSection from "@/components/WheatVegan/BrandAssetsSection";
 import ConceptSection from "@/components/WheatVegan/ConceptSection";
+import NextStepsSection from "@/components/WheatVegan/NextStepsSection";
 
 const ProjectWheatVegan: React.FC = () => {
   useEffect(() => {
@@ -467,6 +468,9 @@ const ProjectWheatVegan: React.FC = () => {
           </Tabs>
         </div>
       </section>
+
+      {/* Next Steps Section */}
+      <NextStepsSection />
 
       {/* Prototypes Section */}
       <PrototypesSection />
