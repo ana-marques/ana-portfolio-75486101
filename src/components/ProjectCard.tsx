@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { cn } from "@/lib/utils";
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 interface ProjectCardProps {
   title: string;
@@ -21,6 +22,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   link = "#",
 }) => {
   const [isHovered, setIsHovered] = useState(false);
+  
+  const CardLink = link.startsWith("#") ? 'a' : Link;
+  const linkProps = link.startsWith("#") 
+    ? { href: link } 
+    : { to: link };
 
   return (
     <div
@@ -36,8 +42,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
     >
       {/* Image Section */}
       <div className="lg:w-3/5 overflow-hidden rounded-lg">
-        <a
-          href={link}
+        <CardLink
+          {...linkProps}
           className="block relative overflow-hidden group"
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
@@ -53,7 +59,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
           </div>
-        </a>
+        </CardLink>
       </div>
 
       {/* Content Section */}
@@ -65,8 +71,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         </div>
         <h3 className="text-2xl md:text-3xl font-bold mb-4">{title}</h3>
         <p className="text-muted-foreground mb-6 text-balance">{description}</p>
-        <a
-          href={link}
+        <CardLink
+          {...linkProps}
           className="inline-flex items-center text-foreground font-medium group/link"
         >
           <span className="relative">
@@ -77,7 +83,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             size={16}
             className="ml-2 transition-transform duration-300 group-hover/link:translate-x-1"
           />
-        </a>
+        </CardLink>
       </div>
     </div>
   );

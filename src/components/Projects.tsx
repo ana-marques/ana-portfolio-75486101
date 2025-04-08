@@ -2,14 +2,24 @@
 import React, { useRef, useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
 import ProjectCard from "./ProjectCard";
+import { Link } from "react-router-dom";
 
 const projects = [
+  {
+    title: "Tacknest - Business Creation Platform",
+    category: "UX/UI Case Study",
+    description:
+      "A comprehensive platform designed to simplify business creation, offering entrepreneurs an intuitive solution to navigate the complex process of establishing their venture with guided workflows and support.",
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    link: "/project/tacknest",
+  },
   {
     title: "Financial Wellness App Redesign",
     category: "UX/UI Design",
     description:
       "A comprehensive redesign that improved user engagement by 37% and simplified complex financial data into digestible, actionable insights for users.",
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    link: "#",
   },
   {
     title: "Healthcare Patient Portal",
@@ -17,6 +27,7 @@ const projects = [
     description:
       "Led the design of an intuitive patient portal that streamlined appointment scheduling and medical record access, resulting in a 42% reduction in support calls.",
     image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    link: "#",
   },
   {
     title: "E-commerce Marketplace Platform",
@@ -24,6 +35,7 @@ const projects = [
     description:
       "Redesigned the user experience for a global marketplace, implementing a customer-centric approach that increased conversion rates by 28% and reduced cart abandonment.",
     image: "https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    link: "#",
   },
 ];
 
@@ -92,6 +104,7 @@ const Projects: React.FC = () => {
               description={project.description}
               image={project.image}
               index={index}
+              link={project.link}
             />
           ))}
         </div>
