@@ -10,7 +10,7 @@ const projects = [
     category: "Product Design",
     description:
       "An online platform designed to make vegan food accessible and enjoyable, featuring subscription boxes, curated recipes, and a community hub aimed at overcoming common barriers to plant-based diets.",
-    image: "/lovable-uploads/10cc7bd0-1e4b-4359-9917-95a5966549c1.png",
+    image: "/lovable-uploads/60a4ad50-16b1-4117-bcf7-a5ed528bb4ba.png",
     link: "/project/wheat-vegan",
   },
   {
