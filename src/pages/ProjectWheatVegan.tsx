@@ -471,7 +471,7 @@ const ProjectWheatVegan: React.FC = () => {
             <h2 className="text-3xl font-bold">More Projects</h2>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <Link to="/project/tacknest" className="group">
               <div className="overflow-hidden rounded-lg aspect-[4/3]">
                 <img 
@@ -481,28 +481,6 @@ const ProjectWheatVegan: React.FC = () => {
                 />
               </div>
               <h3 className="mt-4 font-bold">Tacknest - Business Creation Platform</h3>
-            </Link>
-            
-            <Link to="#" className="group">
-              <div className="overflow-hidden rounded-lg aspect-[4/3]">
-                <img 
-                  src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
-                  alt="Financial Wellness App" 
-                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                />
-              </div>
-              <h3 className="mt-4 font-bold">Financial Wellness App Redesign</h3>
-            </Link>
-            
-            <Link to="#" className="group">
-              <div className="overflow-hidden rounded-lg aspect-[4/3]">
-                <img 
-                  src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
-                  alt="Healthcare Patient Portal" 
-                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                />
-              </div>
-              <h3 className="mt-4 font-bold">Healthcare Patient Portal</h3>
             </Link>
           </div>
         </div>
