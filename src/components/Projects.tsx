@@ -10,7 +10,7 @@ const projects = [
     category: "UX/UI Case Study",
     description:
       "A comprehensive platform designed to simplify business creation, offering entrepreneurs an intuitive solution to navigate the complex process of establishing their venture with guided workflows and support.",
-    image: "/lovable-uploads/f4bc25cf-ed26-4faa-8b18-02f0b5e6ee16.png",
+    image: "/lovable-uploads/2c7a247e-9a31-472e-99af-2e98f397369f.png",
     link: "/project/tacknest",
   },
   {
