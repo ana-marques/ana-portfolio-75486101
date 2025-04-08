@@ -6,6 +6,14 @@ import { Link } from "react-router-dom";
 
 const projects = [
   {
+    title: "Wheat a Vegan - Plant-Based Platform",
+    category: "Product Design",
+    description:
+      "An online platform designed to make vegan food accessible and enjoyable, featuring subscription boxes, curated recipes, and a community hub aimed at overcoming common barriers to plant-based diets.",
+    image: "/lovable-uploads/10cc7bd0-1e4b-4359-9917-95a5966549c1.png",
+    link: "/project/wheat-vegan",
+  },
+  {
     title: "Tacknest - Business Creation Platform",
     category: "UX/UI Case Study",
     description:
