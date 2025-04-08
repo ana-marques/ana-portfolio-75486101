@@ -137,6 +137,89 @@ const ProjectWheatVegan: React.FC = () => {
                   </CardContent>
                 </Card>
               </div>
+
+              <div className="pt-4 space-y-12">
+                <div className="bg-slate-50 p-8 rounded-xl">
+                  <h3 className="text-3xl font-bold mb-4 text-center">"becomes slightly plain and repetitive(...) so it never fully catched my curiosity to cook or try too much."</h3>
+                  <p className="text-muted-foreground italic text-center mt-4">Quote from one participant from the online survey</p>
+                </div>
+                
+                <div>
+                  <h3 className="font-semibold mb-6 text-xl">Common Challenges When Buying Vegan Food</h3>
+                  
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <div className="space-y-2">
+                      <div className="flex flex-col items-center text-center space-y-4">
+                        <img 
+                          src="/lovable-uploads/f0c30d35-3df9-452f-876b-0345d1d6cb2a.png"
+                          alt="Ingredients List Icon"
+                          className="w-16 h-16 object-contain" 
+                        />
+                        <h4 className="text-2xl font-bold">Ingredients List</h4>
+                        <p className="text-muted-foreground">61.4%* of people said is a challenge when buying vegan products</p>
+                        <p className="text-xs text-muted-foreground">*Online Survey about Vegan Food with 130 participants</p>
+                      </div>
+                    </div>
+                    
+                    <div className="space-y-2">
+                      <div className="flex flex-col items-center text-center space-y-4">
+                        <img 
+                          src="/lovable-uploads/186e7ad3-f367-442e-b1b5-1510e3affd5e.png"
+                          alt="Vegan Label"
+                          className="w-16 h-16 object-contain" 
+                        />
+                        <h4 className="text-2xl font-bold">Check if product is actually vegan</h4>
+                        <p className="text-muted-foreground">35.1%* of people said is a challenge when buying vegan products</p>
+                        <p className="text-xs text-muted-foreground">*Online Survey about Vegan Food with 130 participants</p>
+                      </div>
+                    </div>
+                    
+                    <div className="space-y-2">
+                      <div className="flex flex-col items-center text-center space-y-4">
+                        <img 
+                          src="/lovable-uploads/3295143d-1d81-48f3-b862-cb76861fa0b5.png"
+                          alt="Price Icon"
+                          className="w-16 h-16 object-contain" 
+                        />
+                        <h4 className="text-2xl font-bold">Price</h4>
+                        <p className="text-muted-foreground">61.4%* of people said is a challenge when buying vegan products</p>
+                        <p className="text-xs text-muted-foreground">*Online Survey about Vegan Food with 130 participants</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div>
+                  <h3 className="text-2xl font-bold mb-6 text-center">What are the challenges we can find when buying vegan food?</h3>
+                  
+                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <div className="bg-slate-50 p-6 rounded-xl">
+                      <h4 className="text-2xl font-bold mb-4">"A vegan diet isn't balanced and isn't made for everyone."</h4>
+                      <p className="text-muted-foreground italic">Quote from one participant from the online survey</p>
+                    </div>
+                    
+                    <div className="bg-slate-50 p-6 rounded-xl">
+                      <h4 className="text-2xl font-bold mb-4">"Even thought I like it, I can't maintain my lifestyle if I don't have help with vitamins."</h4>
+                      <p className="text-muted-foreground italic">Quote from one participant from the online survey</p>
+                    </div>
+                    
+                    <div className="bg-slate-50 p-6 rounded-xl">
+                      <h4 className="text-2xl font-bold mb-4">"It's a great option, but sometimes is difficult find options variety and are expensive. Also, some of that options are plain flavoured."</h4>
+                      <p className="text-muted-foreground italic">Quote from one participant from the online survey</p>
+                    </div>
+                    
+                    <div className="bg-slate-50 p-6 rounded-xl">
+                      <h4 className="text-2xl font-bold mb-4">"it tastes good, but not the same"</h4>
+                      <p className="text-muted-foreground italic">Quote from one participant from the online survey</p>
+                    </div>
+                    
+                    <div className="bg-slate-50 p-6 rounded-xl lg:col-span-2">
+                      <h4 className="text-2xl font-bold mb-4">"Talking about vegan food that tries to simulate some kind of meat, it doesn't work well in my opinion."</h4>
+                      <p className="text-muted-foreground italic">Quote from one participant from the online survey</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
               
               <div>
                 <h3 className="font-semibold mb-2">Key Findings from Research</h3>
@@ -147,6 +230,7 @@ const ProjectWheatVegan: React.FC = () => {
                   <li>Taste dissatisfaction was the primary reason for abandoning plant-based diets</li>
                   <li>Cultural food traditions presented significant barriers to adoption</li>
                   <li>Lack of knowledge about preparation and nutrition was a common concern</li>
+                  <li>Price and ingredient verification were cited as major challenges when shopping</li>
                 </ul>
               </div>
               
@@ -263,6 +347,39 @@ const ProjectWheatVegan: React.FC = () => {
                           <img 
                             src="/lovable-uploads/09343b8e-815e-4fb1-a4db-c387ab31a41c.png" 
                             alt="For the animals statistics" 
+                            className="w-full aspect-video object-cover"
+                          />
+                        </div>
+                      </div>
+                    </CarouselItem>
+                    <CarouselItem>
+                      <div className="p-1">
+                        <div className="overflow-hidden rounded-lg">
+                          <img 
+                            src="/lovable-uploads/94689028-e8da-41c9-9d7f-605c94703aee.png" 
+                            alt="Platform screenshot" 
+                            className="w-full aspect-video object-cover"
+                          />
+                        </div>
+                      </div>
+                    </CarouselItem>
+                    <CarouselItem>
+                      <div className="p-1">
+                        <div className="overflow-hidden rounded-lg">
+                          <img 
+                            src="/lovable-uploads/f4389673-49e4-4fc9-8e32-4a43189a1aa8.png" 
+                            alt="Platform mobile screenshot" 
+                            className="w-full aspect-video object-cover"
+                          />
+                        </div>
+                      </div>
+                    </CarouselItem>
+                    <CarouselItem>
+                      <div className="p-1">
+                        <div className="overflow-hidden rounded-lg">
+                          <img 
+                            src="/lovable-uploads/6e4a678b-d6a0-492e-96b9-94f4db83c399.png" 
+                            alt="Platform features" 
                             className="w-full aspect-video object-cover"
                           />
                         </div>
