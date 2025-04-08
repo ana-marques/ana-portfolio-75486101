@@ -1,4 +1,3 @@
-
 import React, { useEffect } from "react";
 import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -75,12 +74,12 @@ const ProjectTacknest: React.FC = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
                   <h3 className="font-semibold mb-2">My Role</h3>
-                  <p className="text-muted-foreground">UX/UI Designer</p>
+                  <p className="text-muted-foreground">Product Designer</p>
                 </div>
                 
                 <div>
                   <h3 className="font-semibold mb-2">Project Timeline</h3>
-                  <p className="text-muted-foreground">3 months</p>
+                  <p className="text-muted-foreground">2 weeks</p>
                 </div>
                 
                 <div>
@@ -90,7 +89,7 @@ const ProjectTacknest: React.FC = () => {
                 
                 <div>
                   <h3 className="font-semibold mb-2">Team</h3>
-                  <p className="text-muted-foreground">2 UX Designers, 1 UI Designer, 3 Developers</p>
+                  <p className="text-muted-foreground">1 Product Designer, 1 Product Manager</p>
                 </div>
               </div>
               
