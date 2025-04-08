@@ -1,4 +1,3 @@
-
 import React, { useEffect } from "react";
 import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -45,7 +44,7 @@ const ProjectTacknest: React.FC = () => {
         <div className="container mx-auto max-w-6xl px-6 lg:px-8">
           <div className="overflow-hidden rounded-lg">
             <img
-              src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+              src="/lovable-uploads/f4bc25cf-ed26-4faa-8b18-02f0b5e6ee16.png"
               alt="Tacknest Platform Preview"
               className="w-full object-cover aspect-video"
             />
