@@ -1,4 +1,3 @@
-
 import React, { useEffect } from "react";
 import { ArrowLeft, Leaf } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -43,19 +42,6 @@ const ProjectWheatVegan: React.FC = () => {
             <p className="text-xl text-muted-foreground max-w-3xl mt-4">
               An online platform designed to make vegan food accessible and enjoyable through subscription boxes, recipes, and community support.
             </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Project Image */}
-      <section className="w-full py-8">
-        <div className="container mx-auto max-w-6xl px-6 lg:px-8">
-          <div className="overflow-hidden rounded-lg">
-            <img
-              src="/lovable-uploads/10cc7bd0-1e4b-4359-9917-95a5966549c1.png"
-              alt="Wheat a Vegan Platform Preview"
-              className="w-full object-cover aspect-video"
-            />
           </div>
         </div>
       </section>
