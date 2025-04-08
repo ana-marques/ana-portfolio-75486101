@@ -19,7 +19,7 @@ const ConceptSection = () => {
           
           <div className="flex justify-center">
             <img
-              src="/lovable-uploads/560582db-7b75-4006-9631-905715e40e0e.png"
+              src="/lovable-uploads/882dacab-7f30-4ba6-83b0-6cd0c275753b.png"
               alt="Wheat a Vegan Logo Concept"
               className="max-w-[300px]"
             />
