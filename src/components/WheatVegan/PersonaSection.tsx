@@ -8,10 +8,10 @@ const PersonaSection = () => {
       <div className="container mx-auto max-w-4xl px-6 lg:px-8">
         <h2 className="text-4xl font-bold mb-10">Persona</h2>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div className="w-full">
           <div className="space-y-8">
             {/* Persona characteristics */}
-            <div className="space-y-5">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="flex items-start gap-3">
                 <div className="mt-1">
                   <Leaf className="h-5 w-5 text-green-500" />
