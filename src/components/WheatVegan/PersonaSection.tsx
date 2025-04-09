@@ -48,20 +48,6 @@ const PersonaSection = () => {
               </div>
             </div>
           </div>
-          
-          <div className="relative">
-            <div className="overflow-hidden rounded-lg">
-              <img
-                src="/lovable-uploads/fa521b82-53f2-461e-998a-ac9eca5c7018.png"
-                alt="Adriana Silva, 23y - Persona"
-                className="w-full object-cover"
-              />
-            </div>
-            <div className="absolute bottom-6 left-6 text-slate-800">
-              <h3 className="text-5xl font-bold">Adriana Silva</h3>
-              <p className="text-3xl font-medium mt-2">23y</p>
-            </div>
-          </div>
         </div>
       </div>
     </div>
