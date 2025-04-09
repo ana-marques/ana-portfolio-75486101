@@ -60,7 +60,7 @@ const ProjectWheatVegan: React.FC = () => {
               <TabsTrigger value="overview">Overview</TabsTrigger>
               <TabsTrigger value="problem">Problem</TabsTrigger>
               <TabsTrigger value="solution">Solution</TabsTrigger>
-              <TabsTrigger value="outcome">Outcome</TabsTrigger>
+              <TabsTrigger value="follow-up">Follow-up</TabsTrigger>
             </TabsList>
             
             {/* Project Overview Tab */}
@@ -390,73 +390,72 @@ const ProjectWheatVegan: React.FC = () => {
               </div>
             </TabsContent>
             
-            {/* Project Outcome Tab */}
-            <TabsContent value="outcome" className="space-y-8">
+            {/* Follow-up Tab (replacing the Outcome tab) */}
+            <TabsContent value="follow-up" className="space-y-8">
               <div>
-                <h2 className="text-2xl font-bold mb-4">Project Outcomes</h2>
+                <h2 className="text-2xl font-bold mb-4">Next Steps</h2>
                 <p className="text-muted-foreground">
-                  The Wheat a Vegan platform has successfully addressed key barriers to plant-based eating through its three-pronged approach of subscription boxes, culturally-sensitive recipes, and community support.
+                  Following the launch of Wheat a Vegan platform, these are the key areas we'll focus on for future development and business growth.
                 </p>
               </div>
               
-              <div>
-                <h3 className="font-semibold mb-2">Key Results</h3>
-                <ul className="list-disc list-outside ml-5 space-y-2 text-muted-foreground">
-                  <li>68% of trial users continued their subscription beyond the initial 3-month period</li>
-                  <li>89% reported discovering at least 3 new plant-based products they now regularly purchase</li>
-                  <li>74% of users reported incorporating more plant-based meals into their weekly routine</li>
-                  <li>Recipe platform engagement showed 43% higher retention than industry benchmarks</li>
-                  <li>Community forum grew to over 10,000 active members within first six months</li>
-                </ul>
-              </div>
-              
-              <div>
-                <h3 className="font-semibold mb-2">User Feedback</h3>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <Card className="bg-slate-50 border-none">
-                    <CardContent className="pt-6">
-                      <p className="italic text-muted-foreground">
-                        "The subscription box introduced me to so many alternatives I would have never tried on my own. The recipes that complement the products make it so easy to incorporate them into my cooking."
-                      </p>
-                      <p className="mt-4 font-medium">— Survey respondent, 3-month subscriber</p>
-                    </CardContent>
-                  </Card>
-                  
-                  <Card className="bg-slate-50 border-none">
-                    <CardContent className="pt-6">
-                      <p className="italic text-muted-foreground">
-                        "As someone from a culture where meat is central to our cuisine, I appreciated finding recipes that respected my food traditions while helping me make more plant-based choices."
-                      </p>
-                      <p className="mt-4 font-medium">— Community forum member</p>
-                    </CardContent>
-                  </Card>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div>
+                  <h3 className="text-3xl font-medium text-green-400 mb-6">Design</h3>
+                  <ul className="space-y-4">
+                    <li className="flex items-start gap-3">
+                      <Leaf className="h-6 w-6 flex-shrink-0 text-green-500 mt-1" />
+                      <span className="text-xl">Design more flows like</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <Leaf className="h-6 w-6 flex-shrink-0 text-green-500 mt-1" />
+                      <span className="text-xl">Subscription box</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <Leaf className="h-6 w-6 flex-shrink-0 text-green-500 mt-1" />
+                      <span className="text-xl">Track order</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <Leaf className="h-6 w-6 flex-shrink-0 text-green-500 mt-1" />
+                      <span className="text-xl">Cancel order</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <Leaf className="h-6 w-6 flex-shrink-0 text-green-500 mt-1" />
+                      <span className="text-xl">Test & validate with users</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <Leaf className="h-6 w-6 flex-shrink-0 text-green-500 mt-1" />
+                      <span className="text-xl">And iterate!!</span>
+                    </li>
+                  </ul>
                 </div>
-              </div>
-              
-              <div>
-                <h3 className="font-semibold mb-2">Lessons Learned</h3>
-                <p className="text-muted-foreground">
-                  This project reinforced the importance of addressing emotional and cultural aspects of food choices, not just nutritional or ethical considerations. The most successful aspects were those that recognized food as a core part of identity and approached change with respect for tradition and personal preference.
-                </p>
-                <p className="text-muted-foreground mt-4">
-                  Future iterations will focus on expanding cultural recipe offerings and implementing a personalization algorithm to better match users with products and recipes aligned with their specific taste preferences and cultural backgrounds.
-                </p>
-              </div>
-              
-              <div className="pt-8">
-                <img
-                  src="/lovable-uploads/c4701ef5-bbfa-47e1-99e4-5877a1847318.png"
-                  alt="Why should you go plant-based?"
-                  className="w-full max-w-2xl mx-auto rounded-lg"
-                />
+                
+                <div>
+                  <h3 className="text-3xl font-medium text-green-400 mb-6">Business</h3>
+                  <ul className="space-y-4">
+                    <li className="flex items-start gap-3">
+                      <Leaf className="h-6 w-6 flex-shrink-0 text-green-500 mt-1" />
+                      <span className="text-xl">Content of boxes</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <Leaf className="h-6 w-6 flex-shrink-0 text-green-500 mt-1" />
+                      <span className="text-xl">Partnerships with vegan brands</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <Leaf className="h-6 w-6 flex-shrink-0 text-green-500 mt-1" />
+                      <span className="text-xl">Premium Model</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <Leaf className="h-6 w-6 flex-shrink-0 text-green-500 mt-1" />
+                      <span className="text-xl">Referral program</span>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </TabsContent>
           </Tabs>
         </div>
       </section>
-
-      {/* Next Steps Section */}
-      <NextStepsSection />
 
       {/* Prototypes Section */}
       <PrototypesSection />
