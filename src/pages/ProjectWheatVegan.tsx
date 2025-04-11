@@ -1,3 +1,4 @@
+
 import React, { useEffect } from "react";
 import { ArrowLeft, Leaf } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -46,65 +47,62 @@ const ProjectWheatVegan: React.FC = () => {
         </div>
       </section>
 
+      {/* Project Overview */}
+      <section className="w-full py-16 bg-white">
+        <div className="container mx-auto max-w-4xl px-6 lg:px-8">
+          <h2 className="text-4xl font-bold mb-10">Project Overview</h2>
+          <p className="text-xl text-muted-foreground mb-8">
+            Wheat a Vegan is an online platform that aims to break down barriers to plant-based diets through curated vegan subscription boxes, recipe collections, and community support. The project addresses common challenges like taste preferences, cultural adaptations, and knowledge gaps that prevent people from adopting more plant-based foods.
+          </p>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+            <div>
+              <h3 className="font-semibold text-lg mb-2">My Role</h3>
+              <p className="text-muted-foreground">Product Designer</p>
+            </div>
+            
+            <div>
+              <h3 className="font-semibold text-lg mb-2">Project Timeline</h3>
+              <p className="text-muted-foreground">3 months</p>
+            </div>
+            
+            <div>
+              <h3 className="font-semibold text-lg mb-2">Tools Used</h3>
+              <p className="text-muted-foreground">Figma, Miro, InVision</p>
+            </div>
+            
+            <div>
+              <h3 className="font-semibold text-lg mb-2">Team</h3>
+              <p className="text-muted-foreground">1 Product Designer, 1 Researcher, 2 Developers</p>
+            </div>
+          </div>
+          
+          <div className="mt-8">
+            <h3 className="font-semibold text-lg mb-2">Project Goals</h3>
+            <ul className="list-disc list-outside ml-5 space-y-2 text-muted-foreground">
+              <li>Create an engaging platform to make vegan food more accessible</li>
+              <li>Address common barriers to plant-based diets identified through user research</li>
+              <li>Design subscription boxes that introduce users to vegan alternatives gradually</li>
+              <li>Develop a recipe system that respects cultural food preferences</li>
+              <li>Build community features to support users in their plant-based journey</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      
       {/* Concept Section */}
       <ConceptSection />
       
-      {/* Persona Section */}
-      <PersonaSection />
-      
-      {/* Project Content */}
+      {/* Process & Research Tabs */}
       <section className="w-full py-16">
         <div className="container mx-auto max-w-4xl px-6 lg:px-8">
-          <Tabs defaultValue="overview" className="w-full">
-            <TabsList className="grid w-full grid-cols-4 mb-12">
-              <TabsTrigger value="overview">Overview</TabsTrigger>
-              <TabsTrigger value="problem">Problem</TabsTrigger>
-              <TabsTrigger value="solution">Solution</TabsTrigger>
-              <TabsTrigger value="follow-up">Follow-up</TabsTrigger>
+          <h2 className="text-4xl font-bold mb-10">Research & Solution</h2>
+          <Tabs defaultValue="problem" className="w-full">
+            <TabsList className="grid w-full grid-cols-3 mb-12">
+              <TabsTrigger value="problem">The Problem</TabsTrigger>
+              <TabsTrigger value="persona">Persona</TabsTrigger>
+              <TabsTrigger value="solution">The Solution</TabsTrigger>
             </TabsList>
-            
-            {/* Project Overview Tab */}
-            <TabsContent value="overview" className="space-y-8">
-              <div>
-                <h2 className="text-2xl font-bold mb-4">Project Overview</h2>
-                <p className="text-muted-foreground">
-                  Wheat a Vegan is an online platform that aims to break down barriers to plant-based diets through curated vegan subscription boxes, recipe collections, and community support. The project addresses common challenges like taste preferences, cultural adaptations, and knowledge gaps that prevent people from adopting more plant-based foods.
-                </p>
-              </div>
-              
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div>
-                  <h3 className="font-semibold mb-2">My Role</h3>
-                  <p className="text-muted-foreground">Product Designer</p>
-                </div>
-                
-                <div>
-                  <h3 className="font-semibold mb-2">Project Timeline</h3>
-                  <p className="text-muted-foreground">3 months</p>
-                </div>
-                
-                <div>
-                  <h3 className="font-semibold mb-2">Tools Used</h3>
-                  <p className="text-muted-foreground">Figma, Miro, InVision</p>
-                </div>
-                
-                <div>
-                  <h3 className="font-semibold mb-2">Team</h3>
-                  <p className="text-muted-foreground">1 Product Designer, 1 Researcher, 2 Developers</p>
-                </div>
-              </div>
-              
-              <div>
-                <h3 className="font-semibold mb-2">Project Goals</h3>
-                <ul className="list-disc list-outside ml-5 space-y-2 text-muted-foreground">
-                  <li>Create an engaging platform to make vegan food more accessible</li>
-                  <li>Address common barriers to plant-based diets identified through user research</li>
-                  <li>Design subscription boxes that introduce users to vegan alternatives gradually</li>
-                  <li>Develop a recipe system that respects cultural food preferences</li>
-                  <li>Build community features to support users in their plant-based journey</li>
-                </ul>
-              </div>
-            </TabsContent>
             
             {/* Project Problem Tab */}
             <TabsContent value="problem" className="space-y-8">
@@ -146,7 +144,7 @@ const ProjectWheatVegan: React.FC = () => {
                 <div>
                   <h3 className="font-semibold mb-6 text-xl">Common Challenges When Buying Vegan Food</h3>
                   
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <div className="space-y-2">
                       <div className="flex flex-col items-center text-center space-y-4">
                         <img 
@@ -154,7 +152,7 @@ const ProjectWheatVegan: React.FC = () => {
                           alt="Ingredients List Icon"
                           className="w-16 h-16 object-contain" 
                         />
-                        <h4 className="text-2xl font-bold">Ingredients List</h4>
+                        <h4 className="text-xl font-bold">Ingredients List</h4>
                         <p className="text-muted-foreground">61.4%* of people said is a challenge when buying vegan products</p>
                         <p className="text-xs text-muted-foreground">*Online Survey about Vegan Food with 130 participants</p>
                       </div>
@@ -167,7 +165,7 @@ const ProjectWheatVegan: React.FC = () => {
                           alt="Vegan Label"
                           className="w-16 h-16 object-contain" 
                         />
-                        <h4 className="text-2xl font-bold">Check if product is actually vegan</h4>
+                        <h4 className="text-xl font-bold">Check if product is actually vegan</h4>
                         <p className="text-muted-foreground">35.1%* of people said is a challenge when buying vegan products</p>
                         <p className="text-xs text-muted-foreground">*Online Survey about Vegan Food with 130 participants</p>
                       </div>
@@ -180,7 +178,7 @@ const ProjectWheatVegan: React.FC = () => {
                           alt="Price Icon"
                           className="w-16 h-16 object-contain" 
                         />
-                        <h4 className="text-2xl font-bold">Price</h4>
+                        <h4 className="text-xl font-bold">Price</h4>
                         <p className="text-muted-foreground">61.4%* of people said is a challenge when buying vegan products</p>
                         <p className="text-xs text-muted-foreground">*Online Survey about Vegan Food with 130 participants</p>
                       </div>
@@ -189,56 +187,77 @@ const ProjectWheatVegan: React.FC = () => {
                 </div>
                 
                 <div>
-                  <h3 className="text-2xl font-bold mb-6 text-center">What are the challenges we can find when buying vegan food?</h3>
-                  
-                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                    <div className="bg-slate-50 p-6 rounded-xl">
-                      <h4 className="text-2xl font-bold mb-4">"A vegan diet isn't balanced and isn't made for everyone."</h4>
-                      <p className="text-muted-foreground italic">Quote from one participant from the online survey</p>
-                    </div>
-                    
-                    <div className="bg-slate-50 p-6 rounded-xl">
-                      <h4 className="text-2xl font-bold mb-4">"Even thought I like it, I can't maintain my lifestyle if I don't have help with vitamins."</h4>
-                      <p className="text-muted-foreground italic">Quote from one participant from the online survey</p>
-                    </div>
-                    
-                    <div className="bg-slate-50 p-6 rounded-xl">
-                      <h4 className="text-2xl font-bold mb-4">"It's a great option, but sometimes is difficult find options variety and are expensive. Also, some of that options are plain flavoured."</h4>
-                      <p className="text-muted-foreground italic">Quote from one participant from the online survey</p>
-                    </div>
-                    
-                    <div className="bg-slate-50 p-6 rounded-xl">
-                      <h4 className="text-2xl font-bold mb-4">"it tastes good, but not the same"</h4>
-                      <p className="text-muted-foreground italic">Quote from one participant from the online survey</p>
-                    </div>
-                    
-                    <div className="bg-slate-50 p-6 rounded-xl lg:col-span-2">
-                      <h4 className="text-2xl font-bold mb-4">"Talking about vegan food that tries to simulate some kind of meat, it doesn't work well in my opinion."</h4>
-                      <p className="text-muted-foreground italic">Quote from one participant from the online survey</p>
+                  <h3 className="font-semibold mb-6 text-xl">Key Findings from Research</h3>
+                  <ul className="list-disc list-outside ml-5 space-y-2 text-muted-foreground">
+                    <li>Only 14% of survey participants adopted plant-based diets for health reasons</li>
+                    <li>17.5% were motivated by environmental concerns</li>
+                    <li>Animal welfare was the leading motivation (63.2%)</li>
+                    <li>Taste dissatisfaction was the primary reason for abandoning plant-based diets</li>
+                    <li>Cultural food traditions presented significant barriers to adoption</li>
+                    <li>Lack of knowledge about preparation and nutrition was a common concern</li>
+                    <li>Price and ingredient verification were cited as major challenges when shopping</li>
+                  </ul>
+                </div>
+                
+                <div className="pt-4">
+                  <img
+                    src="/lovable-uploads/3cdd7ecc-5e75-47d6-bb1d-453a3535d15d.png"
+                    alt="Why aren't we all plant-based?"
+                    className="w-full max-w-2xl mx-auto rounded-lg"
+                  />
+                </div>
+              </div>
+            </TabsContent>
+            
+            {/* Persona Tab */}
+            <TabsContent value="persona" className="space-y-8">
+              <div>
+                <h2 className="text-2xl font-bold mb-4">User Persona</h2>
+                <p className="text-muted-foreground mb-6">
+                  Based on our research findings, we developed a primary persona to guide our design decisions.
+                </p>
+                
+                <div className="w-full">
+                  <div className="space-y-8">
+                    {/* Persona characteristics */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                      <div className="flex items-start gap-3">
+                        <div className="mt-1">
+                          <Leaf className="h-5 w-5 text-green-500" />
+                        </div>
+                        <p className="text-xl font-medium">Vegan</p>
+                      </div>
+                      
+                      <div className="flex items-start gap-3">
+                        <div className="mt-1">
+                          <Leaf className="h-5 w-5 text-green-500" />
+                        </div>
+                        <p className="text-xl font-medium">College Student</p>
+                      </div>
+                      
+                      <div className="flex items-start gap-3">
+                        <div className="mt-1">
+                          <Leaf className="h-5 w-5 text-green-500" />
+                        </div>
+                        <p className="text-xl font-medium">Doesn't have a lot of time to look for new vegan products</p>
+                      </div>
+                      
+                      <div className="flex items-start gap-3">
+                        <div className="mt-1">
+                          <Leaf className="h-5 w-5 text-green-500" />
+                        </div>
+                        <p className="text-xl font-medium">Loves to cook, but ends up eating always with the same taste</p>
+                      </div>
+                      
+                      <div className="flex items-start gap-3 md:col-span-2">
+                        <div className="mt-1">
+                          <Leaf className="h-5 w-5 text-green-500" />
+                        </div>
+                        <p className="text-xl font-medium">Would like to have access to more ideas and to new products available in the market</p>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              
-              <div>
-                <h3 className="font-semibold mb-2">Key Findings from Research</h3>
-                <ul className="list-disc list-outside ml-5 space-y-2 text-muted-foreground">
-                  <li>Only 14% of survey participants adopted plant-based diets for health reasons</li>
-                  <li>17.5% were motivated by environmental concerns</li>
-                  <li>Animal welfare was the leading motivation (63.2%)</li>
-                  <li>Taste dissatisfaction was the primary reason for abandoning plant-based diets</li>
-                  <li>Cultural food traditions presented significant barriers to adoption</li>
-                  <li>Lack of knowledge about preparation and nutrition was a common concern</li>
-                  <li>Price and ingredient verification were cited as major challenges when shopping</li>
-                </ul>
-              </div>
-              
-              <div className="pt-4">
-                <img
-                  src="/lovable-uploads/3cdd7ecc-5e75-47d6-bb1d-453a3535d15d.png"
-                  alt="Why aren't we all plant-based?"
-                  className="w-full max-w-2xl mx-auto rounded-lg"
-                />
               </div>
             </TabsContent>
             
@@ -389,80 +408,64 @@ const ProjectWheatVegan: React.FC = () => {
                 </Carousel>
               </div>
             </TabsContent>
-            
-            {/* Follow-up Tab (replacing the Outcome tab) */}
-            <TabsContent value="follow-up" className="space-y-8">
-              <div>
-                <h2 className="text-2xl font-bold mb-4">Next Steps</h2>
-                <p className="text-muted-foreground">
-                  Following the launch of Wheat a Vegan platform, these are the key areas we'll focus on for future development and business growth.
-                </p>
-              </div>
-              
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-                <div>
-                  <h3 className="text-3xl font-medium text-green-400 mb-6">Design</h3>
-                  <ul className="space-y-4">
-                    <li className="flex items-start gap-3">
-                      <Leaf className="h-6 w-6 flex-shrink-0 text-green-500 mt-1" />
-                      <span className="text-xl">Design more flows like</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <Leaf className="h-6 w-6 flex-shrink-0 text-green-500 mt-1" />
-                      <span className="text-xl">Subscription box</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <Leaf className="h-6 w-6 flex-shrink-0 text-green-500 mt-1" />
-                      <span className="text-xl">Track order</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <Leaf className="h-6 w-6 flex-shrink-0 text-green-500 mt-1" />
-                      <span className="text-xl">Cancel order</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <Leaf className="h-6 w-6 flex-shrink-0 text-green-500 mt-1" />
-                      <span className="text-xl">Test & validate with users</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <Leaf className="h-6 w-6 flex-shrink-0 text-green-500 mt-1" />
-                      <span className="text-xl">And iterate!!</span>
-                    </li>
-                  </ul>
-                </div>
-                
-                <div>
-                  <h3 className="text-3xl font-medium text-green-400 mb-6">Business</h3>
-                  <ul className="space-y-4">
-                    <li className="flex items-start gap-3">
-                      <Leaf className="h-6 w-6 flex-shrink-0 text-green-500 mt-1" />
-                      <span className="text-xl">Content of boxes</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <Leaf className="h-6 w-6 flex-shrink-0 text-green-500 mt-1" />
-                      <span className="text-xl">Partnerships with vegan brands</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <Leaf className="h-6 w-6 flex-shrink-0 text-green-500 mt-1" />
-                      <span className="text-xl">Premium Model</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <Leaf className="h-6 w-6 flex-shrink-0 text-green-500 mt-1" />
-                      <span className="text-xl">Referral program</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </TabsContent>
           </Tabs>
         </div>
       </section>
-
+      
       {/* Prototypes Section */}
       <PrototypesSection />
       
       {/* Brand Assets Section */}
       <BrandAssetsSection />
       
+      {/* Next Steps Section */}
+      <section className="w-full py-16 bg-white">
+        <div className="container mx-auto max-w-4xl px-6 lg:px-8">
+          <h2 className="text-4xl font-bold mb-10">Next Steps</h2>
+          <p className="text-muted-foreground mb-8">
+            Following the launch of Wheat a Vegan platform, these are the key areas we'll focus on for future development and business growth.
+          </p>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div>
+              <h3 className="text-3xl font-medium text-green-400 mb-6">Design</h3>
+              <ul className="space-y-4">
+                <li className="flex items-start gap-3">
+                  <Leaf className="h-6 w-6 flex-shrink-0 text-green-500 mt-1" />
+                  <span className="text-xl">Design more flows like subscription box, track order and cancel order</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <Leaf className="h-6 w-6 flex-shrink-0 text-green-500 mt-1" />
+                  <span className="text-xl">Test & validate with users</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <Leaf className="h-6 w-6 flex-shrink-0 text-green-500 mt-1" />
+                  <span className="text-xl">And iterate based on feedback</span>
+                </li>
+              </ul>
+            </div>
+            
+            <div>
+              <h3 className="text-3xl font-medium text-green-400 mb-6">Business</h3>
+              <ul className="space-y-4">
+                <li className="flex items-start gap-3">
+                  <Leaf className="h-6 w-6 flex-shrink-0 text-green-500 mt-1" />
+                  <span className="text-xl">Develop content strategy for subscription boxes</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <Leaf className="h-6 w-6 flex-shrink-0 text-green-500 mt-1" />
+                  <span className="text-xl">Establish partnerships with vegan brands</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <Leaf className="h-6 w-6 flex-shrink-0 text-green-500 mt-1" />
+                  <span className="text-xl">Create premium subscription model and referral program</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Related Projects */}
       <section className="w-full py-16 bg-slate-50">
         <div className="container mx-auto max-w-6xl px-6 lg:px-8">
