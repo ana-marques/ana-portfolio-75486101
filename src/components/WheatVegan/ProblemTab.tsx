@@ -1,6 +1,7 @@
 
 import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
+import { FileSearch, ShieldCheck, Coins } from "lucide-react";
 
 const ProblemTab = () => {
   return (
@@ -46,11 +47,9 @@ const ProblemTab = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="space-y-2">
               <div className="flex flex-col items-center text-center space-y-4">
-                <img 
-                  src="/lovable-uploads/f0c30d35-3df9-452f-876b-0345d1d6cb2a.png"
-                  alt="Ingredients List Icon"
-                  className="w-16 h-16 object-contain" 
-                />
+                <div className="w-16 h-16 flex items-center justify-center bg-green-100 rounded-full">
+                  <FileSearch className="w-8 h-8 text-green-600" />
+                </div>
                 <h4 className="text-xl font-bold">Ingredients List</h4>
                 <p className="text-muted-foreground">61.4%* of people said is a challenge when buying vegan products</p>
                 <p className="text-xs text-muted-foreground">*Online Survey about Vegan Food with 130 participants</p>
@@ -59,11 +58,9 @@ const ProblemTab = () => {
             
             <div className="space-y-2">
               <div className="flex flex-col items-center text-center space-y-4">
-                <img 
-                  src="/lovable-uploads/186e7ad3-f367-442e-b1b5-1510e3affd5e.png"
-                  alt="Vegan Label"
-                  className="w-16 h-16 object-contain" 
-                />
+                <div className="w-16 h-16 flex items-center justify-center bg-green-100 rounded-full">
+                  <ShieldCheck className="w-8 h-8 text-green-600" />
+                </div>
                 <h4 className="text-xl font-bold">Check if product is actually vegan</h4>
                 <p className="text-muted-foreground">35.1%* of people said is a challenge when buying vegan products</p>
                 <p className="text-xs text-muted-foreground">*Online Survey about Vegan Food with 130 participants</p>
@@ -72,11 +69,9 @@ const ProblemTab = () => {
             
             <div className="space-y-2">
               <div className="flex flex-col items-center text-center space-y-4">
-                <img 
-                  src="/lovable-uploads/3295143d-1d81-48f3-b862-cb76861fa0b5.png"
-                  alt="Price Icon"
-                  className="w-16 h-16 object-contain" 
-                />
+                <div className="w-16 h-16 flex items-center justify-center bg-green-100 rounded-full">
+                  <Coins className="w-8 h-8 text-green-600" />
+                </div>
                 <h4 className="text-xl font-bold">Price</h4>
                 <p className="text-muted-foreground">61.4%* of people said is a challenge when buying vegan products</p>
                 <p className="text-xs text-muted-foreground">*Online Survey about Vegan Food with 130 participants</p>
