@@ -46,53 +46,6 @@ const ProjectWheatVegan: React.FC = () => {
         </div>
       </section>
 
-      {/* Project Overview Section */}
-      <section className="w-full py-16 bg-white">
-        <div className="container mx-auto max-w-4xl px-6 lg:px-8">
-          <div className="space-y-8">
-            <div>
-              <h2 className="text-2xl font-bold mb-4">Project Overview</h2>
-              <p className="text-muted-foreground">
-                Wheat a Vegan is an online platform that aims to break down barriers to plant-based diets through curated vegan subscription boxes, recipe collections, and community support. The project addresses common challenges like taste preferences, cultural adaptations, and knowledge gaps that prevent people from adopting more plant-based foods.
-              </p>
-            </div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div>
-                <h3 className="font-semibold mb-2">My Role</h3>
-                <p className="text-muted-foreground">Product Designer</p>
-              </div>
-              
-              <div>
-                <h3 className="font-semibold mb-2">Project Timeline</h3>
-                <p className="text-muted-foreground">3 months</p>
-              </div>
-              
-              <div>
-                <h3 className="font-semibold mb-2">Tools Used</h3>
-                <p className="text-muted-foreground">Figma, Miro, InVision</p>
-              </div>
-              
-              <div>
-                <h3 className="font-semibold mb-2">Team</h3>
-                <p className="text-muted-foreground">1 Product Designer, 1 Researcher, 2 Developers</p>
-              </div>
-            </div>
-            
-            <div>
-              <h3 className="font-semibold mb-2">Project Goals</h3>
-              <ul className="list-disc list-outside ml-5 space-y-2 text-muted-foreground">
-                <li>Create an engaging platform to make vegan food more accessible</li>
-                <li>Address common barriers to plant-based diets identified through user research</li>
-                <li>Design subscription boxes that introduce users to vegan alternatives gradually</li>
-                <li>Develop a recipe system that respects cultural food preferences</li>
-                <li>Build community features to support users in their plant-based journey</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Concept Section */}
       <ConceptSection />
       
@@ -102,12 +55,56 @@ const ProjectWheatVegan: React.FC = () => {
       {/* Project Content */}
       <section className="w-full py-16">
         <div className="container mx-auto max-w-4xl px-6 lg:px-8">
-          <Tabs defaultValue="problem" className="w-full">
-            <TabsList className="grid w-full grid-cols-3 mb-12">
+          <Tabs defaultValue="overview" className="w-full">
+            <TabsList className="grid w-full grid-cols-4 mb-12">
+              <TabsTrigger value="overview">Overview</TabsTrigger>
               <TabsTrigger value="problem">Problem</TabsTrigger>
               <TabsTrigger value="solution">Solution</TabsTrigger>
               <TabsTrigger value="follow-up">Follow-up</TabsTrigger>
             </TabsList>
+            
+            {/* Project Overview Tab */}
+            <TabsContent value="overview" className="space-y-8">
+              <div>
+                <h2 className="text-2xl font-bold mb-4">Project Overview</h2>
+                <p className="text-muted-foreground">
+                  Wheat a Vegan is an online platform that aims to break down barriers to plant-based diets through curated vegan subscription boxes, recipe collections, and community support. The project addresses common challenges like taste preferences, cultural adaptations, and knowledge gaps that prevent people from adopting more plant-based foods.
+                </p>
+              </div>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                  <h3 className="font-semibold mb-2">My Role</h3>
+                  <p className="text-muted-foreground">Product Designer</p>
+                </div>
+                
+                <div>
+                  <h3 className="font-semibold mb-2">Project Timeline</h3>
+                  <p className="text-muted-foreground">3 months</p>
+                </div>
+                
+                <div>
+                  <h3 className="font-semibold mb-2">Tools Used</h3>
+                  <p className="text-muted-foreground">Figma, Miro, InVision</p>
+                </div>
+                
+                <div>
+                  <h3 className="font-semibold mb-2">Team</h3>
+                  <p className="text-muted-foreground">1 Product Designer, 1 Researcher, 2 Developers</p>
+                </div>
+              </div>
+              
+              <div>
+                <h3 className="font-semibold mb-2">Project Goals</h3>
+                <ul className="list-disc list-outside ml-5 space-y-2 text-muted-foreground">
+                  <li>Create an engaging platform to make vegan food more accessible</li>
+                  <li>Address common barriers to plant-based diets identified through user research</li>
+                  <li>Design subscription boxes that introduce users to vegan alternatives gradually</li>
+                  <li>Develop a recipe system that respects cultural food preferences</li>
+                  <li>Build community features to support users in their plant-based journey</li>
+                </ul>
+              </div>
+            </TabsContent>
             
             {/* Project Problem Tab */}
             <TabsContent value="problem" className="space-y-8">
@@ -393,7 +390,7 @@ const ProjectWheatVegan: React.FC = () => {
               </div>
             </TabsContent>
             
-            {/* Follow-up Tab */}
+            {/* Follow-up Tab (replacing the Outcome tab) */}
             <TabsContent value="follow-up" className="space-y-8">
               <div>
                 <h2 className="text-2xl font-bold mb-4">Next Steps</h2>
