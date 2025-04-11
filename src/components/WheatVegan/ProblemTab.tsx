@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { FileSearch, ShieldCheck, Coins } from "lucide-react";
@@ -94,11 +93,7 @@ const ProblemTab = () => {
         </div>
         
         <div className="pt-4">
-          <img
-            src="/lovable-uploads/3cdd7ecc-5e75-47d6-bb1d-453a3535d15d.png"
-            alt="Why aren't we all plant-based?"
-            className="w-full max-w-2xl mx-auto rounded-lg"
-          />
+          {/* Removed the image */}
         </div>
       </div>
     </div>
