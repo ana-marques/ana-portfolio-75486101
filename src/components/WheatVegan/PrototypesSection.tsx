@@ -9,7 +9,7 @@ const PrototypesSection = () => {
   const tabs = [
     { value: "landing", label: "Landing Page", content: <LandingPageTab /> },
     { value: "recipe", label: "Recipe Page", content: <RecipePageTab /> },
-    { value: "mobile", label: "Mobile App", content: <MobileAppTab /> },
+    { value: "mobile", label: "Mobile App", content: <MobileAppTab key="mobile-app-tab-refreshed" /> },
   ];
   
   return (

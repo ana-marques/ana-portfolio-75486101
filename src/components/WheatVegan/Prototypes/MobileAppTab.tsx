@@ -12,6 +12,7 @@ const MobileAppTab = () => {
           className="w-full h-auto object-contain"
           style={{ maxWidth: '100%' }}
           loading="eager"
+          key="mobile-app-image-refreshed"
         />
       </PrototypeCard>
     </div>
