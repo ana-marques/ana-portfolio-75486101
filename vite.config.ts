@@ -12,8 +12,7 @@ export default defineConfig(({ mode }) => ({
   },
   plugins: [
     react(),
-    mode === 'development' &&
-    componentTagger(),
+    mode === 'development' && componentTagger(),
   ].filter(Boolean),
   resolve: {
     alias: {
@@ -21,9 +20,7 @@ export default defineConfig(({ mode }) => ({
     },
   },
   build: {
-    // Increase memory limit
     chunkSizeWarningLimit: 2000,
-    // Optimize build
     minify: "terser",
     terserOptions: {
       compress: {
@@ -31,7 +28,6 @@ export default defineConfig(({ mode }) => ({
         drop_debugger: true
       }
     },
-    // Split chunks for better performance
     rollupOptions: {
       output: {
         manualChunks: {
