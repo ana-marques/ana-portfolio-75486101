@@ -1,7 +1,8 @@
+
 import React, { useEffect } from "react";
 import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
-import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
+import ProjectContentSection from "@/components/Tacknest/ProjectContentSection";
 
 const ProjectTacknest: React.FC = () => {
   useEffect(() => {
@@ -53,155 +54,7 @@ const ProjectTacknest: React.FC = () => {
       </section>
 
       {/* Project Content */}
-      <section className="w-full py-16">
-        <div className="container mx-auto max-w-4xl px-6 lg:px-8">
-          <Tabs defaultValue="overview" className="w-full">
-            <TabsList className="grid w-full grid-cols-4 mb-12">
-              <TabsTrigger value="overview">Overview</TabsTrigger>
-              <TabsTrigger value="problem">Problem</TabsTrigger>
-              <TabsTrigger value="solution">Solution</TabsTrigger>
-              <TabsTrigger value="outcome">Outcome</TabsTrigger>
-            </TabsList>
-            
-            <TabsContent value="overview" className="space-y-8">
-              <div>
-                <h2 className="text-2xl font-bold mb-4">Project Overview</h2>
-                <p className="text-muted-foreground">
-                  Tacknest is a comprehensive platform designed to simplify the often complicated process of business creation. As highlighted in my Medium article, the platform offers entrepreneurs an intuitive solution to navigate through the complex steps of establishing their business venture, from initial planning to legal registration and beyond.
-                </p>
-              </div>
-              
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div>
-                  <h3 className="font-semibold mb-2">My Role</h3>
-                  <p className="text-muted-foreground">Product Designer</p>
-                </div>
-                
-                <div>
-                  <h3 className="font-semibold mb-2">Project Timeline</h3>
-                  <p className="text-muted-foreground">2 weeks</p>
-                </div>
-                
-                <div>
-                  <h3 className="font-semibold mb-2">Tools Used</h3>
-                  <p className="text-muted-foreground">Figma, Adobe XD, InVision</p>
-                </div>
-                
-                <div>
-                  <h3 className="font-semibold mb-2">Team</h3>
-                  <p className="text-muted-foreground">1 Product Designer, 1 Product Manager</p>
-                </div>
-              </div>
-              
-              <div>
-                <h3 className="font-semibold mb-2">Project Goals</h3>
-                <ul className="list-disc list-outside ml-5 space-y-2 text-muted-foreground">
-                  <li>Simplify the business creation process for entrepreneurs</li>
-                  <li>Reduce bureaucratic friction when establishing a business</li>
-                  <li>Provide clear guidance and support through each stage of business creation</li>
-                  <li>Create an intuitive platform that combines administrative tasks with practical guidance</li>
-                </ul>
-              </div>
-            </TabsContent>
-            
-            <TabsContent value="problem" className="space-y-8">
-              <div>
-                <h2 className="text-2xl font-bold mb-4">The Problem</h2>
-                <p className="text-muted-foreground">
-                  Starting a business involves navigating a maze of bureaucratic processes, legal requirements, and administrative tasks that can be overwhelming for first-time entrepreneurs. Many potential business owners get discouraged by the complexity of these procedures or make costly mistakes due to lack of guidance.
-                </p>
-              </div>
-              
-              <div>
-                <h3 className="font-semibold mb-2">Key Challenges</h3>
-                <ul className="list-disc list-outside ml-5 space-y-2 text-muted-foreground">
-                  <li>Complex and often confusing legal requirements across different jurisdictions</li>
-                  <li>Disconnected processes requiring multiple platforms and services</li>
-                  <li>Lack of personalized guidance for different business types</li>
-                  <li>High costs associated with professional consultations and services</li>
-                  <li>Time-consuming paperwork and administrative procedures</li>
-                </ul>
-              </div>
-              
-              <div>
-                <h3 className="font-semibold mb-2">User Research Findings</h3>
-                <p className="text-muted-foreground">
-                  Through interviews with early-stage entrepreneurs, we discovered that 78% felt overwhelmed by the business creation process, and 63% had delayed launching their business due to administrative complexities. Many expressed confusion about which steps to take first and where to find reliable information specific to their business type.
-                </p>
-              </div>
-            </TabsContent>
-            
-            <TabsContent value="solution" className="space-y-8">
-              <div>
-                <h2 className="text-2xl font-bold mb-4">The Solution</h2>
-                <p className="text-muted-foreground">
-                  Tacknest was designed as an all-in-one platform that guides entrepreneurs through every step of the business creation process. The platform combines intelligent workflows, automated document processing, and contextual guidance to make business creation accessible to everyone, regardless of their previous experience.
-                </p>
-              </div>
-              
-              <div>
-                <h3 className="font-semibold mb-2">Key Features</h3>
-                <ul className="list-disc list-outside ml-5 space-y-2 text-muted-foreground">
-                  <li>Step-by-step guided workflows customized to specific business types</li>
-                  <li>Automated document generation and filing</li>
-                  <li>Integrated legal compliance checks</li>
-                  <li>Business plan creation tools and templates</li>
-                  <li>Financial projection calculators and budgeting guides</li>
-                  <li>Marketplace for additional professional services</li>
-                </ul>
-              </div>
-              
-              <div>
-                <h3 className="font-semibold mb-2">Design Process</h3>
-                <p className="text-muted-foreground">
-                  Our design process involved extensive user research, competitive analysis, and iterative prototyping. We focused on creating clear information architecture and intuitive navigation patterns that would guide users naturally through the complex process. The UI design emphasized clarity, with progressive disclosure of information to prevent overwhelming users.
-                </p>
-              </div>
-            </TabsContent>
-            
-            <TabsContent value="outcome" className="space-y-8">
-              <div>
-                <h2 className="text-2xl font-bold mb-4">Project Outcomes</h2>
-                <p className="text-muted-foreground">
-                  Tacknest has significantly simplified the business creation process for entrepreneurs across different industries. The platform has received positive feedback for its user-friendly interface and comprehensive guidance.
-                </p>
-              </div>
-              
-              <div>
-                <h3 className="font-semibold mb-2">Results</h3>
-                <ul className="list-disc list-outside ml-5 space-y-2 text-muted-foreground">
-                  <li>Reduced average business creation time from 4 weeks to 10 days</li>
-                  <li>92% user satisfaction rate based on post-launch surveys</li>
-                  <li>45% reduction in legal consultation costs for entrepreneurs</li>
-                  <li>30% increase in successful business registrations compared to traditional methods</li>
-                </ul>
-              </div>
-              
-              <div>
-                <h3 className="font-semibold mb-2">Lessons Learned</h3>
-                <p className="text-muted-foreground">
-                  This project reinforced the importance of thoroughly understanding the user journey before attempting to simplify complex processes. We learned that even highly technical or bureaucratic procedures could be made approachable through thoughtful UX design and clear information presentation. The project also highlighted the value of continuous user testing throughout the development process.
-                </p>
-              </div>
-              
-              <div className="pt-8">
-                <Link 
-                  to="https://medium.com/@anapcmarques/tacknest-the-easiest-way-to-create-your-business-46ce81a8b2c2" 
-                  className="inline-flex items-center text-primary hover:text-primary/80 transition-colors"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <span className="relative">
-                    Read the full case study on Medium
-                    <span className="absolute -bottom-1 left-0 w-full h-[1px] bg-current transform origin-left"></span>
-                  </span>
-                  <ArrowLeft className="ml-2 h-4 w-4 rotate-180" />
-                </Link>
-              </div>
-            </TabsContent>
-          </Tabs>
-        </div>
-      </section>
+      <ProjectContentSection />
 
       {/* Related Projects */}
       <section className="w-full py-16 bg-slate-50">
