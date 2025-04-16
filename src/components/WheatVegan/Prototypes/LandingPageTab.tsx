@@ -24,7 +24,7 @@ const LandingPageTab = () => {
         console.log("Content appears to be PNG based on header");
         setImageState({
           useAsset: true,
-          debugInfo: "Using PNG from assets",
+          debugInfo: "",
           contentType: "image/png"
         });
       } 
@@ -33,7 +33,7 @@ const LandingPageTab = () => {
         console.log("Content appears to be SVG based on header");
         setImageState({
           useAsset: true,
-          debugInfo: "Using SVG from assets",
+          debugInfo: "",
           contentType: "image/svg+xml"
         });
       }
@@ -42,7 +42,7 @@ const LandingPageTab = () => {
         console.log("Content type unknown, defaulting to PNG");
         setImageState({
           useAsset: true,
-          debugInfo: "Using unknown format from assets (as PNG)",
+          debugInfo: "",
           contentType: "image/png"
         });
       }
@@ -50,7 +50,7 @@ const LandingPageTab = () => {
       console.error("Error with base64 content:", error);
       setImageState({
         useAsset: false,
-        debugInfo: `Error decoding base64: ${error.message}`,
+        debugInfo: "",
         contentType: "image/png"
       });
     }
@@ -61,7 +61,7 @@ const LandingPageTab = () => {
     setImageState(prev => ({
       ...prev,
       useAsset: false,
-      debugInfo: "Fallback: Image from assets failed to load"
+      debugInfo: ""
     }));
   };
 
@@ -69,21 +69,16 @@ const LandingPageTab = () => {
     <div className="space-y-8">
       <PrototypeCard preserveImageQuality={true}>
         {imageState.useAsset ? (
-          <>
-            <img
-              src={`data:${imageState.contentType};base64,${wheatVeganLandingPageSvg}`}
-              alt="Wheat a Vegan Landing Page"
-              className="w-full h-auto object-contain"
-              onError={handleImageError}
-              style={{ 
-                maxWidth: '100%' 
-              }}
-              loading="eager"
-            />
-            <div className="text-xs text-muted-foreground text-center mt-2">
-              {imageState.debugInfo}
-            </div>
-          </>
+          <img
+            src={`data:${imageState.contentType};base64,${wheatVeganLandingPageSvg}`}
+            alt="Wheat a Vegan Landing Page"
+            className="w-full h-auto object-contain"
+            onError={handleImageError}
+            style={{ 
+              maxWidth: '100%' 
+            }}
+            loading="eager"
+          />
         ) : (
           <div>
             <img
@@ -96,9 +91,6 @@ const LandingPageTab = () => {
               }}
               loading="eager"
             />
-            <div className="text-xs text-muted-foreground text-center mt-2">
-              {imageState.debugInfo}
-            </div>
           </div>
         )}
       </PrototypeCard>
