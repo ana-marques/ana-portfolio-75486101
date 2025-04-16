@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { cn } from "@/lib/utils";
 import { ArrowRight } from "lucide-react";
@@ -57,7 +56,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
               src={image}
               alt={title}
               className={cn(
-                "w-full h-full object-cover object-left transition-transform duration-700 ease-out", 
+                "w-full h-full object-cover object-center transition-transform duration-700 ease-out", 
                 isHovered && "scale-105"
               )}
             />
@@ -94,4 +93,3 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 };
 
 export default ProjectCard;
-
