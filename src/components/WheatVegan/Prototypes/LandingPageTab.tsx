@@ -1,17 +1,13 @@
 
 import React from "react";
-import { Card, CardContent } from "@/components/ui/card";
 import PrototypeCard from "./PrototypeCard";
 
 const LandingPageTab = () => {
   return (
     <div className="space-y-8">
-      <PrototypeCard 
-        title="High-Fidelity" 
-        subtitle="Full Landing Page Design"
-      >
+      <PrototypeCard>
         <img
-          src="/lovable-uploads/7793361c-60a1-4b50-9ea8-4a03fc7515db.png"
+          src="/lovable-uploads/e9f07b7a-b740-4ba7-a57a-487e938951ee.png"
           alt="Wheat a Vegan Landing Page"
           className="w-full object-contain rounded-md"
         />
