@@ -1,3 +1,4 @@
+
 import React, { useRef, useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
 import ProjectCard from "./ProjectCard";
@@ -10,6 +11,14 @@ const projects = [
       "An online platform designed to make vegan food accessible and enjoyable, featuring subscription boxes, curated recipes, and a community hub aimed at overcoming common barriers to plant-based diets.",
     image: "/lovable-uploads/60a4ad50-16b1-4117-bcf7-a5ed528bb4ba.png",
     link: "/project/wheat-vegan",
+  },
+  {
+    title: "Circful - Leadership Development Platform",
+    category: "UX/UI Design",
+    description:
+      "A software that helps managers become effective leaders, by understanding their team members and automating leadership practices.",
+    image: "/lovable-uploads/5de4c35b-ce3c-4e4e-b62f-3a6ad5416a3c.png",
+    link: "/project/circful",
   },
   {
     title: "Tacknest - Business Creation Platform",

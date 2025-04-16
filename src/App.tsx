@@ -8,6 +8,7 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import ProjectTacknest from "./pages/ProjectTacknest";
 import ProjectWheatVegan from "./pages/ProjectWheatVegan";
+import ProjectCircful from "./pages/ProjectCircful";
 
 const queryClient = new QueryClient();
 
@@ -21,6 +22,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/project/tacknest" element={<ProjectTacknest />} />
           <Route path="/project/wheat-vegan" element={<ProjectWheatVegan />} />
+          <Route path="/project/circful" element={<ProjectCircful />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

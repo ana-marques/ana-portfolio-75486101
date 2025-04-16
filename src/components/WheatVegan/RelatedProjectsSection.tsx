@@ -11,6 +11,17 @@ const RelatedProjectsSection = () => {
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <Link to="/project/circful" className="group">
+            <div className="overflow-hidden rounded-lg aspect-[4/3]">
+              <img 
+                src="/lovable-uploads/5de4c35b-ce3c-4e4e-b62f-3a6ad5416a3c.png" 
+                alt="Circful Leadership Development Platform" 
+                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+            </div>
+            <h3 className="mt-4 font-bold">Circful - Leadership Development Platform</h3>
+          </Link>
+          
           <Link to="/project/tacknest" className="group">
             <div className="overflow-hidden rounded-lg aspect-[4/3]">
               <img 
