@@ -121,3 +121,18 @@
 .text-balance {
   text-wrap: balance;
 }
+
+/* High-quality image rendering */
+.high-quality-image-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.high-quality-image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  transform: translateZ(0);
+}
