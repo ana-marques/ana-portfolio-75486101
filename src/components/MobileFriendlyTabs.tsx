@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { ScrollArea } from "@/components/ui/scroll-area";
@@ -80,6 +81,8 @@ const MobileFriendlyTabs: React.FC<MobileFriendlyTabsProps> = ({
 
   // Calculate the grid columns based on tab count
   const getGridCols = (count: number) => {
+    // For 3 tabs (like in Research & Solution section), use full width with equal columns
+    if (count === 3) return "grid-cols-3";
     // If there are 5 or more tabs, limit to 5 columns max for readability
     if (count >= 5) return "grid-cols-5";
     // Otherwise use the exact number of tabs
@@ -88,14 +91,21 @@ const MobileFriendlyTabs: React.FC<MobileFriendlyTabsProps> = ({
 
   // Desktop version - use standard tabs with dynamic grid layout
   return (
-    <Tabs defaultValue={defaultValue} className={className}>
-      <TabsList className={`grid w-full ${getGridCols(tabs.length)} mb-12`}>
-        {tabs.map((tab) => (
-          <TabsTrigger key={tab.value} value={tab.value}>
-            {tab.label}
-          </TabsTrigger>
-        ))}
-      </TabsList>
+    <Tabs 
+      defaultValue={defaultValue} 
+      className={className} 
+      onValueChange={handleTabChange}
+      value={activeTab}
+    >
+      <div className="w-full mb-12">
+        <TabsList className={`grid w-full ${getGridCols(tabs.length)}`}>
+          {tabs.map((tab) => (
+            <TabsTrigger key={tab.value} value={tab.value} className="px-4 py-3">
+              {tab.label}
+            </TabsTrigger>
+          ))}
+        </TabsList>
+      </div>
       
       {tabs.map((tab) => (
         <TabsContent key={tab.value} value={tab.value}>
