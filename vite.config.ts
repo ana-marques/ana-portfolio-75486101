@@ -21,7 +21,7 @@ export default defineConfig(({ mode }) => ({
   },
   build: {
     chunkSizeWarningLimit: 2000,
-    minify: "terser",
+    minify: "esbuild", // Changed from "terser" to "esbuild" which is built-in
     terserOptions: {
       compress: {
         drop_console: true,
