@@ -17,7 +17,7 @@ const projects = [
     category: "UX/UI Design",
     description:
       "A software that helps managers become effective leaders, by understanding their team members and automating leadership practices.",
-    image: "/lovable-uploads/174bc4e7-2e3b-40a2-a467-3967f075d70f.png",
+    image: "/lovable-uploads/5599020a-7ffc-47d3-b337-bfa2720a259d.png",
     link: "/project/circful",
   },
   {
