@@ -46,8 +46,8 @@ const ProjectCircful: React.FC = () => {
         <div className="container mx-auto max-w-6xl px-6 lg:px-8">
           <div className="overflow-hidden rounded-lg">
             <img
-              src="/lovable-uploads/5de4c35b-ce3c-4e4e-b62f-3a6ad5416a3c.png"
-              alt="Circful Platform Preview"
+              src="/lovable-uploads/174bc4e7-2e3b-40a2-a467-3967f075d70f.png"
+              alt="Circful Platform Login Screen"
               className="w-full object-cover aspect-video"
             />
           </div>
