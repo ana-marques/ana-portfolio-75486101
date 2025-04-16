@@ -79,17 +79,7 @@ const MobileFriendlyTabs: React.FC<MobileFriendlyTabsProps> = ({
     );
   }
 
-  // Calculate the grid columns based on tab count
-  const getGridCols = (count: number) => {
-    // For 3 tabs (like in Research & Solution section), use full width with equal columns
-    if (count === 3) return "grid-cols-3";
-    // If there are 5 or more tabs, limit to 5 columns max for readability
-    if (count >= 5) return "grid-cols-5";
-    // Otherwise use the exact number of tabs
-    return `grid-cols-${count}`;
-  };
-
-  // Desktop version - use standard tabs with dynamic grid layout
+  // Desktop version with proper tab styling and consistent layout
   return (
     <Tabs 
       defaultValue={defaultValue} 
@@ -98,9 +88,13 @@ const MobileFriendlyTabs: React.FC<MobileFriendlyTabsProps> = ({
       value={activeTab}
     >
       <div className="w-full mb-12">
-        <TabsList className={`grid w-full ${getGridCols(tabs.length)}`}>
+        <TabsList className="w-full flex h-12 p-0 bg-muted/20">
           {tabs.map((tab) => (
-            <TabsTrigger key={tab.value} value={tab.value} className="px-4 py-3">
+            <TabsTrigger 
+              key={tab.value} 
+              value={tab.value} 
+              className="flex-1 h-full rounded-none px-4 py-3 text-sm font-medium data-[state=active]:bg-background data-[state=active]:shadow-none border-b-2 border-transparent data-[state=active]:border-primary"
+            >
               {tab.label}
             </TabsTrigger>
           ))}
