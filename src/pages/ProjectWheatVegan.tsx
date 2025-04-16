@@ -28,7 +28,7 @@ const ProjectWheatVegan: React.FC = () => {
       {/* Process & Research Tabs */}
       <ResearchSolutionSection />
       
-      {/* Prototypes Section */}
+      {/* Designs Section */}
       <PrototypesSection />
       
       {/* Brand Assets Section */}
