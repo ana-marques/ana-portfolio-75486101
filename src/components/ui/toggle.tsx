@@ -10,7 +10,7 @@ const toggleVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-slate-50", // Updated to match the Designs section background
+        default: "bg-background", // Updated to use the background color
         outline:
           "border border-input bg-transparent hover:bg-accent hover:text-accent-foreground",
       },
