@@ -210,38 +210,27 @@ const ProjectTacknest: React.FC = () => {
             <h2 className="text-3xl font-bold">More Projects</h2>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <Link to="#" className="group">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <Link to="/project/wheat-vegan" className="group">
               <div className="overflow-hidden rounded-lg aspect-[4/3]">
                 <img 
-                  src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
-                  alt="Financial Wellness App" 
+                  src="/lovable-uploads/60a4ad50-16b1-4117-bcf7-a5ed528bb4ba.png" 
+                  alt="Wheat a Vegan - Plant-Based Platform" 
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                 />
               </div>
-              <h3 className="mt-4 font-bold">Financial Wellness App Redesign</h3>
+              <h3 className="mt-4 font-bold">Wheat a Vegan - Plant-Based Platform</h3>
             </Link>
             
-            <Link to="#" className="group">
+            <Link to="/project/circful" className="group">
               <div className="overflow-hidden rounded-lg aspect-[4/3]">
                 <img 
-                  src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
-                  alt="Healthcare Patient Portal" 
+                  src="/lovable-uploads/5599020a-7ffc-47d3-b337-bfa2720a259d.png" 
+                  alt="Circful - Leadership Development Platform" 
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                 />
               </div>
-              <h3 className="mt-4 font-bold">Healthcare Patient Portal</h3>
-            </Link>
-            
-            <Link to="#" className="group">
-              <div className="overflow-hidden rounded-lg aspect-[4/3]">
-                <img 
-                  src="https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
-                  alt="E-commerce Marketplace Platform" 
-                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                />
-              </div>
-              <h3 className="mt-4 font-bold">E-commerce Marketplace Platform</h3>
+              <h3 className="mt-4 font-bold">Circful - Leadership Development Platform</h3>
             </Link>
           </div>
         </div>
