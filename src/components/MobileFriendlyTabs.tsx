@@ -79,10 +79,10 @@ const MobileFriendlyTabs: React.FC<MobileFriendlyTabsProps> = ({
     );
   }
 
-  // Desktop version - use standard tabs
+  // Desktop version - use standard tabs with proper grid layout
   return (
     <Tabs defaultValue={defaultValue} className={className}>
-      <TabsList className={`grid w-full grid-cols-${tabs.length} mb-12`}>
+      <TabsList className="grid w-full grid-cols-4 mb-12">
         {tabs.map((tab) => (
           <TabsTrigger key={tab.value} value={tab.value}>
             {tab.label}
