@@ -55,7 +55,7 @@ const Navbar: React.FC = () => {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
-          {["work", "about", "process", "contact"].map((item) => (
+          {["work", "about", "contact"].map((item) => (
             <a
               key={item}
               href={`#${item}`}
@@ -114,7 +114,7 @@ const Navbar: React.FC = () => {
           </Button>
           
           <nav className="flex flex-col space-y-6 items-start">
-            {["work", "about", "process", "contact"].map((item) => (
+            {["work", "about", "contact"].map((item) => (
               <a
                 key={item}
                 href={`#${item}`}
@@ -143,3 +143,4 @@ const Navbar: React.FC = () => {
 };
 
 export default Navbar;
+
