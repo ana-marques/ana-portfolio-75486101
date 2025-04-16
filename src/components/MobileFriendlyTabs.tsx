@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { ScrollArea } from "@/components/ui/scroll-area";
@@ -79,10 +78,18 @@ const MobileFriendlyTabs: React.FC<MobileFriendlyTabsProps> = ({
     );
   }
 
-  // Desktop version - use standard tabs with proper grid layout
+  // Calculate the grid columns based on tab count
+  const getGridCols = (count: number) => {
+    // If there are 5 or more tabs, limit to 5 columns max for readability
+    if (count >= 5) return "grid-cols-5";
+    // Otherwise use the exact number of tabs
+    return `grid-cols-${count}`;
+  };
+
+  // Desktop version - use standard tabs with dynamic grid layout
   return (
     <Tabs defaultValue={defaultValue} className={className}>
-      <TabsList className="grid w-full grid-cols-4 mb-12">
+      <TabsList className={`grid w-full ${getGridCols(tabs.length)} mb-12`}>
         {tabs.map((tab) => (
           <TabsTrigger key={tab.value} value={tab.value}>
             {tab.label}
