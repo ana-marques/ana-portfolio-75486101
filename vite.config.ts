@@ -24,7 +24,7 @@ export default defineConfig(({ mode }) => ({
     // Increase memory limit
     chunkSizeWarningLimit: 2000,
     // Optimize build
-    minify: 'terser',
+    minify: "terser",
     terserOptions: {
       compress: {
         drop_console: true,
