@@ -4,44 +4,31 @@ import PrototypeCard from "./PrototypeCard";
 import { wheatVeganLandingPageSvg } from "@/utils/svgAssets";
 
 const LandingPageTab = () => {
-  const [useFallbackImage, setUseFallbackImage] = useState(false);
-  const [svgDataUrl, setSvgDataUrl] = useState<string | null>(null);
+  const [useImageFromAssets, setUseImageFromAssets] = useState(true);
   
   useEffect(() => {
     try {
-      // Try to decode the SVG content
-      const svgContent = atob(wheatVeganLandingPageSvg);
-      
-      // Log the first part of the SVG content for debugging
-      console.log("SVG content first 50 chars:", svgContent.substring(0, 50));
-      
-      // Check if it's a valid SVG
-      if (!svgContent.startsWith('<svg') && !svgContent.startsWith('<?xml')) {
-        console.error("SVG content format is invalid:", svgContent.substring(0, 20));
-        setUseFallbackImage(true);
-        return;
-      }
-      
-      // Create a data URL
-      const dataUrl = `data:image/svg+xml;base64,${wheatVeganLandingPageSvg}`;
-      setSvgDataUrl(dataUrl);
+      // Try to decode the content to verify it's valid
+      const content = atob(wheatVeganLandingPageSvg);
+      // If we get this far without an error, the base64 is at least valid
+      console.log("Base64 content appears to be valid");
     } catch (error) {
-      console.error("Error processing SVG:", error);
-      setUseFallbackImage(true);
+      console.error("Error with base64 content:", error);
+      setUseImageFromAssets(false);
     }
   }, []);
   
   const handleImageError = () => {
-    console.error("SVG failed to load, switching to PNG fallback");
-    setUseFallbackImage(true);
+    console.error("Image failed to load, switching to PNG fallback");
+    setUseImageFromAssets(false);
   };
 
   return (
     <div className="space-y-8">
       <PrototypeCard preserveImageQuality={true}>
-        {!useFallbackImage && svgDataUrl ? (
+        {useImageFromAssets ? (
           <img
-            src={svgDataUrl}
+            src={`data:image/png;base64,${wheatVeganLandingPageSvg}`}
             alt="Wheat a Vegan Landing Page"
             className="w-full h-auto object-contain"
             onError={handleImageError}
@@ -63,7 +50,7 @@ const LandingPageTab = () => {
               loading="eager"
             />
             <div className="text-xs text-muted-foreground text-center mt-2">
-              Using PNG fallback - SVG could not be loaded
+              Using PNG fallback image
             </div>
           </div>
         )}
