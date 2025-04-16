@@ -23,5 +23,39 @@ export default defineConfig(({ mode }) => ({
   build: {
     // Increase memory limit
     chunkSizeWarningLimit: 2000,
+    // Optimize build
+    minify: 'terser',
+    terserOptions: {
+      compress: {
+        drop_console: true,
+        drop_debugger: true
+      }
+    },
+    // Split chunks for better performance
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: [
+            'react', 
+            'react-dom', 
+            'react-router-dom',
+            '@tanstack/react-query'
+          ],
+          ui: [
+            '@radix-ui/react-accordion',
+            '@radix-ui/react-alert-dialog',
+            '@radix-ui/react-avatar',
+            '@radix-ui/react-dialog',
+            '@radix-ui/react-dropdown-menu',
+            '@radix-ui/react-popover',
+            '@radix-ui/react-select',
+            '@radix-ui/react-slot',
+            '@radix-ui/react-tabs',
+            '@radix-ui/react-toast',
+            '@radix-ui/react-tooltip'
+          ]
+        }
+      }
+    }
   },
 }));
