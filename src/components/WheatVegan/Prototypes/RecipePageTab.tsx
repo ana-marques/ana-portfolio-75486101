@@ -1,10 +1,7 @@
 
 import React, { useState, useEffect } from "react";
 import PrototypeCard from "./PrototypeCard";
-
-// Add this to the utils/svgAssets.ts file since we can't modify it directly
-// This is a placeholder - the actual SVG will need to be provided
-const wheatVeganRecipePageSvg = ""; // This would be replaced with the actual base64 string
+import { wheatVeganRecipePageSvg } from "@/utils/svgAssets";
 
 const RecipePageTab = () => {
   const [imageState, setImageState] = useState({
