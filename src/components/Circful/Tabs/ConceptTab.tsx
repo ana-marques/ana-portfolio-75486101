@@ -19,17 +19,17 @@ const ConceptTab = () => {
         
         <div>
           <h3 className="font-semibold mb-2">Project Timeline</h3>
-          <p className="text-muted-foreground">3 months</p>
+          <p className="text-muted-foreground">1 year</p>
         </div>
         
         <div>
           <h3 className="font-semibold mb-2">Tools Used</h3>
-          <p className="text-muted-foreground">Figma, Miro, UserTesting</p>
+          <p className="text-muted-foreground">Figma, Miro</p>
         </div>
         
         <div>
           <h3 className="font-semibold mb-2">Team</h3>
-          <p className="text-muted-foreground">1 Designer, 2 Developers, 1 Product Manager</p>
+          <p className="text-muted-foreground">1 Designer, 1 Developer, 1 Product Manager, 1 HR Specialist</p>
         </div>
       </div>
     </div>
