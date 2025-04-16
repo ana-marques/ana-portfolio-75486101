@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -17,7 +16,7 @@ const BrandAssetsSection = () => {
               <h3 className="text-lg font-medium mb-4">Logo</h3>
               <div className="flex justify-center p-4 bg-white rounded-lg shadow-sm">
                 <img
-                  src="/lovable-uploads/6afafae1-24fd-44df-8c4d-ea62c63c0152.png"
+                  src="/lovable-uploads/3b6445ae-d35d-4883-aaf9-0d3b1f3753dc.png"
                   alt="Wheat a Vegan Logo"
                   className="max-w-[200px]"
                 />
@@ -96,7 +95,7 @@ const BrandAssetsSection = () => {
         
         <div className="mt-12 flex justify-center">
           <img
-            src="/lovable-uploads/6afafae1-24fd-44df-8c4d-ea62c63c0152.png"
+            src="/lovable-uploads/3b6445ae-d35d-4883-aaf9-0d3b1f3753dc.png"
             alt="Wheat a Vegan Logo Green Background"
             className="max-w-[300px] mx-auto"
           />
