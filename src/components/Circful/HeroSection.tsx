@@ -27,7 +27,7 @@ const HeroSection = () => {
           </h1>
 
           <p className="text-xl text-muted-foreground max-w-3xl mt-4">
-            The way companies address <span className="text-amber-500 font-medium">employee churn</span> is broken
+            A software that helps managers become effective leaders, by understanding their team members and automating leadership practices.
           </p>
         </div>
       </div>
