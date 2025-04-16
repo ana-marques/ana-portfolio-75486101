@@ -1,4 +1,3 @@
-
 import React, { useEffect } from "react";
 import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -170,7 +169,7 @@ const ProjectCircful: React.FC = () => {
                   <h3 className="text-xl font-semibold mb-4">Collect</h3>
                   <div className="flex justify-center mb-6">
                     <div className="text-blue-600">
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="size-8"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/></svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="size-8"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/></svg>
                     </div>
                   </div>
                   <p className="text-muted-foreground">
@@ -239,8 +238,12 @@ const ProjectCircful: React.FC = () => {
                     </div>
                   </div>
                   
-                  <div className="bg-gray-100 rounded-lg h-64 flex items-center justify-center text-gray-400">
-                    [Dashboard visualization]
+                  <div className="bg-gray-100 rounded-lg overflow-hidden shadow-lg">
+                    <img 
+                      src="/lovable-uploads/93734806-6dfa-4bb5-9606-67e2b7416103.png" 
+                      alt="Circful Dashboard Visualization" 
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                 </div>
               </div>
