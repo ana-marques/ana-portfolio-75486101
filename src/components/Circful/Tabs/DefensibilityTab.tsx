@@ -1,5 +1,6 @@
 
 import React from "react";
+import { BarChart4, BookUser, Brain, Rocket } from "lucide-react";
 
 const DefensibilityTab = () => {
   return (
@@ -11,8 +12,8 @@ const DefensibilityTab = () => {
           <div className="bg-white p-6 rounded-lg border shadow-sm">
             <div className="flex items-start gap-4">
               <div className="bg-blue-50 p-3 rounded-full">
-                <div className="text-blue-600">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="size-6"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M9 15v-6"/><path d="M12 15v-3"/><path d="M15 15v-6"/></svg>
+                <div className="text-[#FDB75A]">
+                  <BarChart4 className="size-6" />
                 </div>
               </div>
               <div>
@@ -27,8 +28,8 @@ const DefensibilityTab = () => {
           <div className="bg-white p-6 rounded-lg border shadow-sm">
             <div className="flex items-start gap-4">
               <div className="bg-blue-50 p-3 rounded-full">
-                <div className="text-blue-600">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="size-6"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M7 7h10v2H7z"/><path d="M7 11h10v2H7z"/><path d="M7 15h4v2H7z"/></svg>
+                <div className="text-[#FDB75A]">
+                  <BookUser className="size-6" />
                 </div>
               </div>
               <div>
