@@ -62,13 +62,25 @@ const BrandAssetsSection = () => {
               <h3 className="text-lg font-medium mb-4">Illustrations</h3>
               <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                 <div className="p-3 bg-white rounded-lg shadow-sm flex justify-center items-center">
-                  <img src="/lovable-uploads/375abc2c-a5df-44e0-98da-51fcc0241049.png" alt="Leaves Illustration" className="h-20 object-contain" />
+                  <img 
+                    src="/lovable-uploads/e167596d-ec46-44cc-9b6a-ca12dd0c3f38.png" 
+                    alt="Banana and Mushroom Illustration" 
+                    className="h-20 object-contain" 
+                  />
                 </div>
                 <div className="p-3 bg-white rounded-lg shadow-sm flex justify-center items-center">
-                  <img src="/lovable-uploads/375abc2c-a5df-44e0-98da-51fcc0241049.png" alt="Box with Plant Illustration" className="h-20 object-contain" />
+                  <img 
+                    src="/lovable-uploads/b6fcac76-7eb2-423e-8f93-b81d2886edff.png" 
+                    alt="Leaves and Avocado Illustration" 
+                    className="h-20 object-contain" 
+                  />
                 </div>
                 <div className="p-3 bg-white rounded-lg shadow-sm flex justify-center items-center">
-                  <img src="/lovable-uploads/f656561f-4d1a-40c1-91ff-3af22b2066cc.png" alt="Avocado Illustration" className="h-20 object-contain" />
+                  <img 
+                    src="/lovable-uploads/f656561f-4d1a-40c1-91ff-3af22b2066cc.png" 
+                    alt="Avocado Illustration" 
+                    className="h-20 object-contain" 
+                  />
                 </div>
               </div>
             </CardContent>
