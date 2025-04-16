@@ -17,7 +17,7 @@ const BrandAssetsSection = () => {
               <h3 className="text-lg font-medium mb-4">Logo</h3>
               <div className="flex justify-center p-4 bg-white rounded-lg shadow-sm">
                 <img
-                  src="/lovable-uploads/e6df201a-a11b-4efe-9eb4-09720f3f8000.png"
+                  src="/lovable-uploads/6afafae1-24fd-44df-8c4d-ea62c63c0152.png"
                   alt="Wheat a Vegan Logo"
                   className="max-w-[200px]"
                 />
@@ -96,7 +96,7 @@ const BrandAssetsSection = () => {
         
         <div className="mt-12 flex justify-center">
           <img
-            src="/lovable-uploads/560582db-7b75-4006-9631-905715e40e0e.png"
+            src="/lovable-uploads/6afafae1-24fd-44df-8c4d-ea62c63c0152.png"
             alt="Wheat a Vegan Logo Green Background"
             className="max-w-[300px] mx-auto"
           />
