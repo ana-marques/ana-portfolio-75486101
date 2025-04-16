@@ -25,8 +25,14 @@ const RelatedProjectsSection = () => {
     }
   ];
 
+  // Extract the current project slug from the URL
+  const currentProjectSlug = currentPath.split('/').pop();
+  
   // Filter out current project to show only related ones
-  const relatedProjects = allProjects.filter(project => !currentPath.includes(project.link.split("/").pop() || ""));
+  const relatedProjects = allProjects.filter(project => {
+    const projectSlug = project.link.split('/').pop();
+    return projectSlug !== currentProjectSlug;
+  });
 
   return (
     <section className="w-full py-16 bg-slate-50">
