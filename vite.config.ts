@@ -21,7 +21,7 @@ export default defineConfig(({ mode }) => ({
   },
   build: {
     chunkSizeWarningLimit: 2000,
-    minify: "esbuild",
+    minify: "esbuild", // Explicitly setting esbuild as the minifier
     rollupOptions: {
       output: {
         manualChunks: {
